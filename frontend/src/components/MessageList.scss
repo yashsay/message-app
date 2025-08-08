@@ -1,0 +1,58 @@
+.message-list {
+  padding: 16px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.message {
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  max-width: 80%;
+}
+
+.message.patient {
+  background-color: #e0f7fa;
+  align-self: flex-start;
+}
+
+.message.provider {
+  background-color: #dcedc8;
+  align-self: flex-end;
+}
+
+.message-meta {
+  font-size: 0.75rem;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.message-text {
+  font-size: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+
+  input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1976d2;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0d47a1;
+    }
+  }
+}
