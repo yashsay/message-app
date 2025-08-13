@@ -1,21 +1,22 @@
 # backend/app/api.py
-from flask import Blueprint, jsonify, request
+from fastapi import APIRouter
+from pydantic import BaseModel
+from typing import List
 from app.utils import load_flattened_messages
 
-api_bp = Blueprint("api", __name__)
+router = APIRouter()
 
-@api_bp.route("/messages", methods=["GET"])
+class SearchRequest(BaseModel):
+    query: str
+
+@router.get("/messages")
 def get_all_messages():
     messages = load_flattened_messages()
-    return jsonify({"messages": messages})
+    return {"messages": messages}
 
-@api_bp.route("/search", methods=["POST"])
-def search_messages():
-    data = request.get_json()
-    query = data.get("query", "").lower()
+@router.post("/search")
+def search_messages(payload: SearchRequest):
+    query = payload.query.lower()
     messages = load_flattened_messages()
-
-    filtered = [
-        msg for msg in messages if query in msg["text"].lower()
-    ]
-    return jsonify({"results": filtered})
+    filtered = [msg for msg in messages if query in msg["text"].lower()]
+    return {"results": filtered}

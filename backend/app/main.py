@@ -1,13 +1,22 @@
 # backend/app/main.py
-from flask import Flask
-from flask_cors import CORS
-from app.api import api_bp
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from app.api import router as api_router
 
-app = Flask(__name__)
-CORS(app)
+app = FastAPI(title="Message App API", version="1.0.0")
 
-# Register blueprints
-app.register_blueprint(api_bp, url_prefix="/api")
+# CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # TODO: Restrict in prod
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Register API routes
+app.include_router(api_router, prefix="/api")
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8000)
+    import uvicorn
+    uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)
