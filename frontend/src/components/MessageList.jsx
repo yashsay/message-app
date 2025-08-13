@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import "./MessageList.scss";
 import axios from "axios";
+import { useEffect, useState } from "react";
+import "./MessageList.scss";
 
 const MessageList = () => {
   const [messages, setMessages] = useState([]);
@@ -41,14 +41,31 @@ const MessageList = () => {
         <button onClick={handleSearch}>Search</button>
       </div>
 
-      {messages.map((msg, idx) => (
-        <div key={idx} className={`message ${msg.sender.toLowerCase()}`}>
-          <div className="message-meta">
-            <strong>{msg.sender}</strong> <span>{msg.timestamp}</span>
+      {messages.map((msg, idx) => {
+        const sender = msg.sender ? msg.sender.toUpperCase() : "";
+        let formattedTime = msg.timestamp;
+        if (msg.timestamp) {
+          try {
+            const dateObj = new Date(msg.timestamp);
+            formattedTime = dateObj.toLocaleString(undefined, {
+              year: "numeric",
+              month: "short",
+              day: "2-digit",
+              hour: "2-digit",
+              minute: "2-digit",
+            });
+          } catch {}
+        }
+        return (
+          <div key={idx} className={`message ${msg.sender.toLowerCase()}`}>
+            <div className="message-header">
+              <span className="message-sender">{sender}</span>
+              <span className="message-meta">{formattedTime}</span>
+            </div>
+            <div className="message-text">{msg.text}</div>
           </div>
-          <div className="message-text">{msg.text}</div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 };

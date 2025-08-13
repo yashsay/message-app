@@ -1,0 +1,67 @@
+@use "../../styles/theme" as theme;
+.header {
+  width: 100vw;
+  background: theme.$color-primary;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(34, 40, 49, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding-left: 2.5rem;
+  height: 4.5rem;
+
+  // Glassmorphic header
+  background: rgba(34, 40, 49, 0.55);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  box-shadow: 0 4px 24px 0 rgba(34, 40, 49, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__logo-img {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: block;
+  }
+
+  &__title {
+    font-family: "Segoe UI", "Roboto", Arial, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 1.5rem 0;
+  }
+  &__profile {
+    margin-left: auto;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #b5ead7 0%, #00adb5 100%);
+    box-shadow: 0 0 12px 0 #00adb5;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+    img {
+      width: 70%;
+      height: 70%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 24px 0 #00adb5;
+    }
+  }
+}
