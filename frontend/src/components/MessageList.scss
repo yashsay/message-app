@@ -198,3 +198,75 @@
     }
   }
 }
+
+.ai-toggle {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 8px;
+  cursor: pointer;
+  input {
+    accent-color: theme.$color-accent; // modern browsers
+  }
+}
+
+.summary-box {
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+  h4 {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0 0 8px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .highlights {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+
+    .highlight {
+      font-size: 0.8rem;
+      padding: 2px 6px;
+      border-radius: 6px;
+      background: theme.$color-accent;
+      color: white;
+    }
+  }
+}
+
+.summarize-btn {
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 999px;
+  background: theme.$color-secondary;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: theme.$color-accent;
+  }
+}
+
+.message-block {
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.summary-actions {
+  margin-top: 8px;
+}
