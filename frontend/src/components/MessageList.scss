@@ -270,3 +270,19 @@
 .summary-actions {
   margin-top: 8px;
 }
+
+.conversation-block {
+  margin-bottom: 32px;
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.conversation-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
+}
+

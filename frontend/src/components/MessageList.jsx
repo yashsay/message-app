@@ -1,3 +1,4 @@
+// MessageList.jsx
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./MessageList.scss";
@@ -6,7 +7,7 @@ const MessageList = () => {
   const [messages, setMessages] = useState([]);
   const [query, setQuery] = useState("");
   const [useAI, setUseAI] = useState(false);
-  const [summaries, setSummaries] = useState({}); // ✅ store summaries per conversationId
+  const [summaries, setSummaries] = useState({}); // store summaries per conversationId
 
   useEffect(() => {
     fetchMessages();
@@ -17,7 +18,7 @@ const MessageList = () => {
       .get("http://localhost:8000/api/messages")
       .then((res) => {
         setMessages(res.data.messages);
-        setSummaries({}); // reset summaries on reload
+        setSummaries({});
       })
       .catch((err) => console.error("Error:", err));
   };
@@ -52,11 +53,19 @@ const MessageList = () => {
       .then((res) =>
         setSummaries((prev) => ({
           ...prev,
-          [conversationId]: res.data, // ✅ store by conversationId
+          [conversationId]: res.data,
         }))
       )
       .catch((err) => console.error("Summarize failed:", err));
   };
+
+  // ✅ Group messages by conversationId
+  const groupedMessages = messages.reduce((acc, msg) => {
+    const cid = msg.conversationId || "unknown";
+    if (!acc[cid]) acc[cid] = [];
+    acc[cid].push(msg);
+    return acc;
+  }, {});
 
   return (
     <div className="message-list">
@@ -79,66 +88,67 @@ const MessageList = () => {
         </label>
       </div>
 
-      {/* Messages */}
-      {messages.map((msg, idx) => {
-        const sender = msg.sender
-          ? msg.sender.toUpperCase()
-          : msg.participant || "UNKNOWN";
+      {/* ✅ Render conversations */}
+      {Object.entries(groupedMessages).map(([conversationId, convMsgs]) => (
+        <div key={conversationId} className="conversation-block">
+          <h3 className="conversation-title">Conversation {conversationId}</h3>
 
-        let formattedTime = msg.timestamp;
-        if (msg.timestamp) {
-          try {
-            const dateObj = new Date(msg.timestamp);
-            formattedTime = dateObj.toLocaleString(undefined, {
-              year: "numeric",
-              month: "short",
-              day: "2-digit",
-              hour: "2-digit",
-              minute: "2-digit",
-            });
-          } catch {}
-        }
+          {convMsgs.map((msg, idx) => {
+            const sender = msg.sender
+              ? msg.sender.toUpperCase()
+              : msg.participant || "UNKNOWN";
 
-        return (
-          <div key={idx} className={`message-block`}>
-            {/* Single message */}
-            <div className={`message ${sender.toLowerCase()}`}>
-              <div className="message-header">
-                <span className="message-sender">{sender}</span>
-                <span className="message-meta">{formattedTime}</span>
-              </div>
-              <div className="message-text">{msg.text || msg.snippet}</div>
-            </div>
+            let formattedTime = msg.timestamp;
+            if (msg.timestamp) {
+              try {
+                const dateObj = new Date(msg.timestamp);
+                formattedTime = dateObj.toLocaleString(undefined, {
+                  year: "numeric",
+                  month: "short",
+                  day: "2-digit",
+                  hour: "2-digit",
+                  minute: "2-digit",
+                });
+              } catch {}
+            }
 
-            {/* ✅ Summarize button for this conversation */}
-            {msg.conversationId && (
-              <div className="summary-actions">
-                <button
-                  className="summarize-btn"
-                  onClick={() => handleSummarize(msg.conversationId)}
-                >
-                  Summarize Conversation
-                </button>
-              </div>
-            )}
-
-            {/* ✅ Summary box for this conversation */}
-            {summaries[msg.conversationId] && (
-              <div className="summary-box">
-                <h4>Conversation Summary</h4>
-                <p>{summaries[msg.conversationId].summary}</p>
-                <div className="highlights">
-                  {summaries[msg.conversationId].highlights.map((h, hIdx) => (
-                    <span key={hIdx} className="highlight">
-                      #{h}
-                    </span>
-                  ))}
+            return (
+              <div key={idx} className={`message ${sender.toLowerCase()}`}>
+                <div className="message-header">
+                  <span className="message-sender">{sender}</span>
+                  <span className="message-meta">{formattedTime}</span>
                 </div>
+                <div className="message-text">{msg.text || msg.snippet}</div>
               </div>
-            )}
+            );
+          })}
+
+          {/* ✅ Summarize button for the whole conversation */}
+          <div className="summary-actions">
+            <button
+              className="summarize-btn"
+              onClick={() => handleSummarize(conversationId)}
+            >
+              Summarize Conversation
+            </button>
           </div>
-        );
-      })}
+
+          {/* ✅ Summary box for this conversation */}
+          {summaries[conversationId] && (
+            <div className="summary-box">
+              <h4>Conversation Summary</h4>
+              <p>{summaries[conversationId].summary}</p>
+              <div className="highlights">
+                {summaries[conversationId].highlights.map((h, hIdx) => (
+                  <span key={hIdx} className="highlight">
+                    #{h}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      ))}
     </div>
   );
 };
