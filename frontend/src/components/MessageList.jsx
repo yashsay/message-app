@@ -84,71 +84,75 @@ const MessageList = () => {
             checked={useAI}
             onChange={(e) => setUseAI(e.target.checked)}
           />
-          AI Search
+          Advanced Search
         </label>
       </div>
 
       {/* ✅ Render conversations */}
-      {Object.entries(groupedMessages).map(([conversationId, convMsgs]) => (
-        <div key={conversationId} className="conversation-block">
-          <h3 className="conversation-title">Conversation {conversationId}</h3>
+      <div className="conversations-list">
+        {Object.entries(groupedMessages).map(([conversationId, convMsgs]) => (
+          <div key={conversationId} className="conversation-block">
+            <h3 className="conversation-title">
+              Conversation {conversationId}
+            </h3>
 
-          {convMsgs.map((msg, idx) => {
-            const sender = msg.sender
-              ? msg.sender.toUpperCase()
-              : msg.participant || "UNKNOWN";
+            {convMsgs.map((msg, idx) => {
+              const sender = msg.sender
+                ? msg.sender.toUpperCase()
+                : msg.participant || "UNKNOWN";
 
-            let formattedTime = msg.timestamp;
-            if (msg.timestamp) {
-              try {
-                const dateObj = new Date(msg.timestamp);
-                formattedTime = dateObj.toLocaleString(undefined, {
-                  year: "numeric",
-                  month: "short",
-                  day: "2-digit",
-                  hour: "2-digit",
-                  minute: "2-digit",
-                });
-              } catch {}
-            }
+              let formattedTime = msg.timestamp;
+              if (msg.timestamp) {
+                try {
+                  const dateObj = new Date(msg.timestamp);
+                  formattedTime = dateObj.toLocaleString(undefined, {
+                    year: "numeric",
+                    month: "short",
+                    day: "2-digit",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                  });
+                } catch {}
+              }
 
-            return (
-              <div key={idx} className={`message ${sender.toLowerCase()}`}>
-                <div className="message-header">
-                  <span className="message-sender">{sender}</span>
-                  <span className="message-meta">{formattedTime}</span>
+              return (
+                <div key={idx} className={`message ${sender.toLowerCase()}`}>
+                  <div className="message-header">
+                    <span className="message-sender">{sender}</span>
+                    <span className="message-meta">{formattedTime}</span>
+                  </div>
+                  <div className="message-text">{msg.text || msg.snippet}</div>
                 </div>
-                <div className="message-text">{msg.text || msg.snippet}</div>
-              </div>
-            );
-          })}
+              );
+            })}
 
-          {/* ✅ Summarize button for the whole conversation */}
-          <div className="summary-actions">
-            <button
-              className="summarize-btn"
-              onClick={() => handleSummarize(conversationId)}
-            >
-              Summarize Conversation
-            </button>
-          </div>
-
-          {/* ✅ Summary box for this conversation */}
-          {summaries[conversationId] && (
-            <div className="summary-box">
-              <h4>Conversation Summary</h4>
-              <p>{summaries[conversationId].summary}</p>
-              <div className="highlights">
-                {summaries[conversationId].highlights.map((h, hIdx) => (
-                  <span key={hIdx} className="highlight">
-                    #{h}
-                  </span>
-                ))}
-              </div>
+            {/* ✅ Summarize button for the whole conversation */}
+            <div className="summary-actions">
+              <button
+                className="summarize-btn"
+                onClick={() => handleSummarize(conversationId)}
+              >
+                Summarize Conversation
+              </button>
             </div>
-          )}
-        </div>
-      ))}
+
+            {/* ✅ Summary box for this conversation */}
+            {summaries[conversationId] && (
+              <div className="summary-box">
+                <h4>Conversation Summary</h4>
+                <p>{summaries[conversationId].summary}</p>
+                <div className="highlights">
+                  {summaries[conversationId].highlights.map((h, hIdx) => (
+                    <span key={hIdx} className="highlight">
+                      #{h}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

@@ -1,7 +1,8 @@
 @use "../styles/theme" as theme;
 .message-list {
   padding: 24px 18px 18px 18px;
-  max-width: 600px;
+  max-width: 800px;
+  height: calc(100dvh - 200px);
   margin: auto;
   background: rgba(255, 255, 255, 0.18);
   border-radius: 2rem;
@@ -285,4 +286,3 @@
   margin-bottom: 12px;
   color: #333;
 }
-
