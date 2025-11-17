@@ -1,0 +1,71 @@
+@use "../../styles/theme" as theme;
+
+.message {
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+  margin-bottom: 1.2rem;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 24px 0 rgba(34, 40, 49, 0.1);
+  font-size: 1.05rem;
+  line-height: 1.5;
+  backdrop-filter: blur(8px) saturate(160%);
+  background: rgba(255, 255, 255, 0.25);
+  color: theme.$color-primary;
+  position: relative;
+  z-index: 2;
+  transition: background 0.3s;
+
+  &--patient {
+    align-self: flex-start;
+    background: linear-gradient(
+      120deg,
+      theme.$color-warning 0%,
+      theme.$color-secondary 100%
+    );
+    color: theme.$color-primary;
+    box-shadow: 0 0 8px 2px #ffe5ec55;
+  }
+
+  &--provider {
+    align-self: flex-end;
+    background: linear-gradient(
+      120deg,
+      theme.$color-accent 0%,
+      theme.$color-success 100%
+    );
+    color: theme.$color-primary;
+    box-shadow: 0 0 8px 2px #e0f7fa55;
+  }
+}
+
+.message__header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 2px;
+}
+
+.message__sender {
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Inter Rounded", "Inter", "SF Pro Rounded", system-ui, sans-serif;
+  letter-spacing: 0.01em;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.message__meta {
+  font-size: 0.8rem;
+  color: #111;
+  font-family: "Inter Rounded", "Inter", "SF Pro Rounded", system-ui, sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+.message__text {
+  font-size: 1.05rem;
+  font-family: "Inter Rounded", "Inter", "SF Pro Rounded", system-ui, sans-serif;
+}

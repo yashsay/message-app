@@ -1,0 +1,37 @@
+@use "../../styles/theme" as theme;
+
+.conversation-block {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px) saturate(170%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 2rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 24px 0 rgba(34, 40, 49, 0.12);
+  position: relative;
+  z-index: 2;
+}
+
+.conversation-block__title {
+  font-family: "Inter Rounded", "Inter", "SF Pro Rounded", system-ui, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: theme.$color-primary;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+  padding: 0.5rem;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.conversation-block__messages {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}

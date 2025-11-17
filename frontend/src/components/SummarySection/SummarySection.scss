@@ -1,0 +1,85 @@
+@use "../../styles/theme" as theme;
+
+.summary-section {
+  margin-top: 1rem;
+}
+
+.summary-section__actions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.summary-section__button {
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(
+    135deg,
+    theme.$color-secondary 0%,
+    theme.$color-warning 100%
+  );
+  color: theme.$color-primary;
+  border: none;
+  border-radius: 1.5rem;
+  font-weight: 600;
+  font-family: "Inter Rounded", "Inter", "SF Pro Rounded", system-ui, sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(theme.$color-secondary, 0.3);
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(theme.$color-secondary, 0.4);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.summary-section__box {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 16px 0 rgba(34, 40, 49, 0.1);
+}
+
+.summary-section__title {
+  font-family: "Inter Rounded", "Inter", "SF Pro Rounded", system-ui, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: theme.$color-primary;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.summary-section__text {
+  font-family: "Inter Rounded", "Inter", "SF Pro Rounded", system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: theme.$color-primary;
+  margin: 0 0 1rem 0;
+}
+
+.summary-section__highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.summary-section__highlight {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background: linear-gradient(
+    135deg,
+    theme.$color-accent 0%,
+    theme.$color-success 100%
+  );
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 1rem;
+  font-family: "Inter Rounded", "Inter", "SF Pro Rounded", system-ui, sans-serif;
+}

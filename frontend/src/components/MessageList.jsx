@@ -1,66 +1,56 @@
-// MessageList.jsx
-import axios from "axios";
 import { useEffect, useState } from "react";
+import { useMessages, useSearch, useSummarize } from "../hooks";
+import { ConversationBlock, SearchBar } from "./";
 import "./MessageList.scss";
 
 const MessageList = () => {
-  const [messages, setMessages] = useState([]);
   const [query, setQuery] = useState("");
   const [useAI, setUseAI] = useState(false);
-  const [summaries, setSummaries] = useState({}); // store summaries per conversationId
+  const [summaries, setSummaries] = useState({});
+  const [displayMessages, setDisplayMessages] = useState([]);
+
+  const { messages, fetchMessages } = useMessages();
+  const { searchMessages } = useSearch();
+  const { summarizeConversation } = useSummarize();
 
   useEffect(() => {
     fetchMessages();
-  }, []);
+  }, [fetchMessages]);
 
-  const fetchMessages = () => {
-    axios
-      .get("http://localhost:8000/api/messages")
-      .then((res) => {
-        setMessages(res.data.messages);
-        setSummaries({});
-      })
-      .catch((err) => console.error("Error:", err));
-  };
+  useEffect(() => {
+    setDisplayMessages(messages);
+  }, [messages]);
 
-  const handleSearch = () => {
+  const handleSearch = async () => {
     if (query.trim() === "") {
-      fetchMessages();
+      setDisplayMessages(messages);
+      setSummaries({});
       return;
     }
 
-    const url = useAI
-      ? "http://localhost:8000/api/semantic-search"
-      : "http://localhost:8000/api/search";
-
-    const payload = useAI ? { query, top_k: 5 } : { query };
-
-    axios
-      .post(url, payload)
-      .then((res) => {
-        setMessages(res.data.results);
-        setSummaries({});
-      })
-      .catch((err) => console.error("Search failed:", err));
+    try {
+      const results = await searchMessages(query, useAI);
+      setDisplayMessages(results);
+      setSummaries({});
+    } catch (err) {
+      console.error("Search failed:", err);
+    }
   };
 
-  const handleSummarize = (conversationId) => {
-    axios
-      .post("http://localhost:8000/api/summarize", {
-        conversationId,
-        scope: "all",
-      })
-      .then((res) =>
-        setSummaries((prev) => ({
-          ...prev,
-          [conversationId]: res.data,
-        }))
-      )
-      .catch((err) => console.error("Summarize failed:", err));
+  const handleSummarize = async (conversationId) => {
+    try {
+      const summary = await summarizeConversation(conversationId);
+      setSummaries((prev) => ({
+        ...prev,
+        [conversationId]: summary,
+      }));
+    } catch (err) {
+      console.error("Summarize failed:", err);
+    }
   };
 
-  // ✅ Group messages by conversationId
-  const groupedMessages = messages.reduce((acc, msg) => {
+  // Group messages by conversationId
+  const groupedMessages = displayMessages.reduce((acc, msg) => {
     const cid = msg.conversationId || "unknown";
     if (!acc[cid]) acc[cid] = [];
     acc[cid].push(msg);
@@ -69,88 +59,23 @@ const MessageList = () => {
 
   return (
     <div className="message-list">
-      {/* Search + toggle */}
-      <div className="search-bar">
-        <input
-          type="text"
-          placeholder="Search messages..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        />
-        <button onClick={handleSearch}>Search</button>
-        <label className="ai-toggle">
-          <input
-            type="checkbox"
-            checked={useAI}
-            onChange={(e) => setUseAI(e.target.checked)}
-          />
-          Advanced Search
-        </label>
-      </div>
+      <SearchBar
+        query={query}
+        onQueryChange={setQuery}
+        onSearch={handleSearch}
+        useAI={useAI}
+        onToggleAI={setUseAI}
+      />
 
-      {/* ✅ Render conversations */}
-      <div className="conversations-list">
+      <div className="message-list__conversations">
         {Object.entries(groupedMessages).map(([conversationId, convMsgs]) => (
-          <div key={conversationId} className="conversation-block">
-            <h3 className="conversation-title">
-              Conversation {conversationId}
-            </h3>
-
-            {convMsgs.map((msg, idx) => {
-              const sender = msg.sender
-                ? msg.sender.toUpperCase()
-                : msg.participant || "UNKNOWN";
-
-              let formattedTime = msg.timestamp;
-              if (msg.timestamp) {
-                try {
-                  const dateObj = new Date(msg.timestamp);
-                  formattedTime = dateObj.toLocaleString(undefined, {
-                    year: "numeric",
-                    month: "short",
-                    day: "2-digit",
-                    hour: "2-digit",
-                    minute: "2-digit",
-                  });
-                } catch {}
-              }
-
-              return (
-                <div key={idx} className={`message ${sender.toLowerCase()}`}>
-                  <div className="message-header">
-                    <span className="message-sender">{sender}</span>
-                    <span className="message-meta">{formattedTime}</span>
-                  </div>
-                  <div className="message-text">{msg.text || msg.snippet}</div>
-                </div>
-              );
-            })}
-
-            {/* ✅ Summarize button for the whole conversation */}
-            <div className="summary-actions">
-              <button
-                className="summarize-btn"
-                onClick={() => handleSummarize(conversationId)}
-              >
-                Summarize Conversation
-              </button>
-            </div>
-
-            {/* ✅ Summary box for this conversation */}
-            {summaries[conversationId] && (
-              <div className="summary-box">
-                <h4>Conversation Summary</h4>
-                <p>{summaries[conversationId].summary}</p>
-                <div className="highlights">
-                  {summaries[conversationId].highlights.map((h, hIdx) => (
-                    <span key={hIdx} className="highlight">
-                      #{h}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
+          <ConversationBlock
+            key={conversationId}
+            conversationId={conversationId}
+            messages={convMsgs}
+            summary={summaries[conversationId]}
+            onSummarize={handleSummarize}
+          />
         ))}
       </div>
     </div>

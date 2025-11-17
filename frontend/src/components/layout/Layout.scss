@@ -1,0 +1,19 @@
+.layout {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.layout__main {
+  position: relative;
+  z-index: 2;
+}
+
+.layout__container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: transparent;
+  position: relative;
+}

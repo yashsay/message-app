@@ -32,3 +32,5 @@ build/
 
 # Ignore Mac system files
 *.DS_Store
+
+.vite/
