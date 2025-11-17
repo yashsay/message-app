@@ -6,14 +6,15 @@ Backend for the Message App, built with **FastAPI**. Supports both keyword and s
 
 ## Features
 
-- FastAPI-based REST API
-- CORS enabled for frontend integration
-- Keyword and semantic search endpoints
-- Extractive conversation summarization endpoint (word frequency-based)
-- FAISS vector index for fast semantic search
-- Uses Sentence Transformers for embeddings
-- Loads and serves messages from shared data
-- Modular codebase for easy extension
+- **FastAPI-based REST API** with automatic OpenAPI documentation
+- **CORS enabled** for seamless frontend integration
+- **Dual search capabilities**: keyword and semantic search endpoints
+- **Conversation summarization**: extractive summaries with keyword highlights
+- **FAISS vector indexing** for high-performance semantic search
+- **Sentence Transformers**: state-of-the-art embeddings for semantic understanding
+- **Shared data integration**: loads and serves messages from centralized data store
+- **Modular architecture**: clean separation of concerns for easy extension and testing
+- **Startup validation**: automatic FAISS index loading with error handling
 
 ---
 
@@ -46,10 +47,22 @@ backend/
 
 ---
 
+## Key Dependencies
+
+- **FastAPI**: Modern web framework for building APIs
+- **FAISS**: Facebook AI Similarity Search for vector operations
+- **sentence-transformers**: Pre-trained transformer models for embeddings
+- **uvicorn**: ASGI server for running FastAPI applications
+- **scikit-learn**: Machine learning utilities for text processing
+- **torch**: PyTorch for deep learning model support
+
+---
+
 ## Requirements
 
-- Python 3.11 (see `.python-version`)
+- **Python 3.11.9** (see `.python-version`)
 - pip
+- Virtual environment (recommended)
 
 ---
 
@@ -113,10 +126,49 @@ backend/
 
 ## Development
 
-- Edit API logic in `app/api.py` and `app/semantic_search.py`.
-- Add or update summarization logic in `app/api.py` as needed.
-- Update or reprocess data in `shared/data/` as needed.
-- For frontend integration, see the main project `README.md`.
+### Code Structure
+
+- **API logic**: Edit routes and request handling in `app/api.py`
+- **Search engine**: Modify semantic search logic in `app/semantic_search.py`
+- **Data utilities**: Update data loading functions in `app/utils.py`
+- **Index building**: Modify FAISS index creation in `app/build_index.py`
+- **App configuration**: Update CORS, middleware in `app/main.py`
+
+### Common Development Tasks
+
+- **Adding new endpoints**: Define routes in `app/api.py` and update router
+- **Updating search logic**: Modify algorithms in `app/semantic_search.py`
+- **Data reprocessing**: Update `shared/scripts/flattenMessages.py` then rebuild index
+- **Testing changes**: Use FastAPI's automatic docs at `http://localhost:8000/docs`
+
+### Troubleshooting
+
+- **FAISS index errors**: Ensure you've run `python -m app.build_index`
+- **Import errors**: Check virtual environment activation and dependencies
+- **CORS issues**: Verify frontend URL in `app/main.py` CORS settings
+- **Performance issues**: Monitor FAISS index size and consider optimization
+
+### Integration
+
+- **Frontend**: See main project `README.md` for full-stack setup
+- **API testing**: Use the interactive docs at `/docs` or `/redoc` endpoints
+
+---
+
+## Performance Considerations
+
+- **FAISS Index Size**: Index size grows with message volume; monitor memory usage
+- **Embedding Generation**: First-time startup may be slow due to model loading
+- **Concurrent Requests**: FastAPI handles multiple requests efficiently
+- **Vector Search**: FAISS provides sub-linear search time complexity
+
+## Production Deployment
+
+- **Environment Variables**: Consider using `.env` for configuration
+- **CORS Settings**: Restrict `allow_origins` to specific domains in production
+- **Security**: Add authentication/authorization as needed
+- **Monitoring**: Implement logging and health check endpoints
+- **Scaling**: Consider using multiple workers with `gunicorn`
 
 ---
 
