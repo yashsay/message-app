@@ -45,7 +45,7 @@
     theme.$color-accent 0%,
     theme.$color-success 100%
   );
-  color: white;
+  color: theme.$color-primary;
   border: none;
   border-radius: 1.5rem;
   font-weight: 600;
@@ -57,6 +57,11 @@
   &:hover {
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(theme.$color-accent, 0.4);
+    background: linear-gradient(
+      135deg,
+      darken(theme.$color-accent, 5%) 0%,
+      darken(theme.$color-success, 5%) 100%
+    );
   }
 
   &:active {

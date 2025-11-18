@@ -1,0 +1,90 @@
+[
+  {
+    "date": "2025-08-01",
+    "data": [
+      {
+        "id": "conv_001",
+        "subject": "Prescription Request",
+        "participants": ["patient_001", "provider_001"],
+        "messages": [
+          {
+            "sender": "patient_001",
+            "text": "Can I get a refill for my blood pressure medication?",
+            "timestamp": "2025-08-01T09:23:00Z"
+          },
+          {
+            "sender": "provider_001",
+            "text": "Sure. I’ve sent the refill to your pharmacy.",
+            "timestamp": "2025-08-01T10:12:00Z"
+          }
+        ]
+      },
+      {
+        "id": "conv_002",
+        "subject": "Appointment Request",
+        "participants": ["patient_002", "caregiver_001"],
+        "messages": [
+          {
+            "sender": "patient_002",
+            "text": "I need to book a follow-up appointment for my knee pain.",
+            "timestamp": "2025-08-01T11:45:00Z"
+          },
+          {
+            "sender": "caregiver_001",
+            "text": "Would next Monday at 10am work for you?",
+            "timestamp": "2025-08-01T12:00:00Z"
+          },
+          {
+            "sender": "patient_002",
+            "text": "Yes, that works. Please confirm it.",
+            "timestamp": "2025-08-01T12:05:00Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2025-08-02",
+    "data": [
+      {
+        "id": "conv_003",
+        "subject": "Symptom Reporting",
+        "participants": ["patient_003", "provider_002"],
+        "messages": [
+          {
+            "sender": "patient_003",
+            "text": "I’ve been having headaches and dizziness lately.",
+            "timestamp": "2025-08-02T08:10:00Z"
+          },
+          {
+            "sender": "provider_002",
+            "text": "Please monitor your blood pressure twice daily and log the readings.",
+            "timestamp": "2025-08-02T08:30:00Z"
+          }
+        ]
+      },
+      {
+        "id": "conv_004",
+        "subject": "Lab Report Discussion",
+        "participants": ["provider_001", "patient_001"],
+        "messages": [
+          {
+            "sender": "provider_001",
+            "text": "Your blood test results came back normal, except slightly elevated cholesterol.",
+            "timestamp": "2025-08-02T14:20:00Z"
+          },
+          {
+            "sender": "patient_001",
+            "text": "Thanks for the update. Do I need to change my diet?",
+            "timestamp": "2025-08-02T14:45:00Z"
+          },
+          {
+            "sender": "provider_001",
+            "text": "Yes. I recommend reducing saturated fats and increasing fiber intake.",
+            "timestamp": "2025-08-02T15:00:00Z"
+          }
+        ]
+      }
+    ]
+  }
+]

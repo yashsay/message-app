@@ -1,37 +1,40 @@
 @use "../../styles/theme" as theme;
 
 .conversation-block {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px) saturate(170%);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 2rem;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 6px 24px 0 rgba(34, 40, 49, 0.12);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1.5rem;
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
   position: relative;
-  z-index: 2;
 }
 
 .conversation-block__title {
-  font-family: "Inter Rounded", "Inter", "SF Pro Rounded", system-ui, sans-serif;
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: theme.$color-primary;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1.25rem 0;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.75rem 1rem;
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.2) 0%,
-    rgba(255, 255, 255, 0.1) 100%
+    rgba(167, 199, 231, 0.15) 0%,
+    rgba(184, 242, 230, 0.15) 100%
   );
-  border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  letter-spacing: -0.01em;
+  border: 1px solid rgba(167, 199, 231, 0.2);
 }
 
 .conversation-block__messages {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+  gap: 0.25rem;
+  margin-bottom: 1.25rem;
+  align-items: stretch;
+  width: 100%;
+  min-height: 0;
 }

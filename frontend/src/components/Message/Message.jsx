@@ -6,6 +6,13 @@ const Message = ({ message }) => {
     ? message.sender.toUpperCase()
     : message.participant || "UNKNOWN";
 
+  // Determine if this is a patient or provider message
+  const isProvider =
+    sender.includes("DR_") ||
+    sender.includes("DOCTOR") ||
+    sender.includes("PHYSICIAN");
+  const messageType = isProvider ? "provider" : "patient";
+
   let formattedTime = message.timestamp;
   if (message.timestamp) {
     try {
@@ -23,7 +30,7 @@ const Message = ({ message }) => {
   }
 
   return (
-    <div className={`message message--${sender.toLowerCase()}`}>
+    <div className={`message message--${messageType}`}>
       <div className="message__header">
         <span className="message__sender">{sender}</span>
         <span className="message__meta">{formattedTime}</span>

@@ -1,0 +1,203 @@
+{
+  "messageResponse": [
+    {
+      "messageId": "eeae7fe8-bfcc-4e84-99d9-03ae573004db",
+      "messageType": "OUTGOING",
+      "content": "new convo by AD",
+      "senderName": "Watson",
+      "readBy": [
+        {
+          "readUser": {
+            "type": "Patient",
+            "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+            "displayName": "watson_james@yopmail.com",
+            "firstName": "Watson",
+            "lastName": "James",
+            "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+          },
+          "readTimestamp": "2023-10-09T09:56:58.168Z"
+        },
+        {
+          "readUser": {
+            "type": "Provider",
+            "identifier": "C2DF2F3A1B7F464B9BCBFC2264BF4346",
+            "displayName": "lmdc super, MD",
+            "firstName": "lmdc",
+            "lastName": "super"
+          },
+          "readTimestamp": "2023-10-09T12:18:04.953Z"
+        },
+        {
+          "readUser": {
+            "type": "Provider",
+            "identifier": "432CF44517014CB6BA352B2C9DB816D9",
+            "displayName": "super tiny, MD",
+            "firstName": "super",
+            "lastName": "tiny"
+          },
+          "readTimestamp": "2023-10-09T16:49:59.906Z"
+        }
+      ],
+      "timeStamp": "2023-10-09T15:26:58.169",
+      "seen": true
+    },
+    {
+      "messageId": "6a45410d-663e-412f-9a7e-f3c7c7576bbc",
+      "messageType": "START_AUTOMATED",
+      "content": "We have successfully received your message. Your care team will contact you shortly.",
+      "senderName": "Automated message",
+      "readBy": [
+        {
+          "readUser": {
+            "type": "Patient",
+            "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+            "displayName": "watson_james@yopmail.com",
+            "firstName": "Watson",
+            "lastName": "James",
+            "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+          },
+          "readTimestamp": "2023-10-09T09:56:58.211Z"
+        },
+        {
+          "readUser": {
+            "type": "Provider",
+            "identifier": "C2DF2F3A1B7F464B9BCBFC2264BF4346",
+            "displayName": "lmdc super, MD",
+            "firstName": "lmdc",
+            "lastName": "super"
+          },
+          "readTimestamp": "2023-10-09T12:18:04.944Z"
+        },
+        {
+          "readUser": {
+            "type": "Provider",
+            "identifier": "432CF44517014CB6BA352B2C9DB816D9",
+            "displayName": "super tiny, MD",
+            "firstName": "super",
+            "lastName": "tiny"
+          },
+          "readTimestamp": "2023-10-09T16:49:59.894Z"
+        }
+      ],
+      "timeStamp": "2023-10-09T15:26:58.211",
+      "seen": true
+    },
+    {
+      "messageId": "78cbdb14-a2b1-4efe-bf07-c290ea83e796",
+      "messageType": "INCOMING",
+      "content": "new message by AD Admin",
+      "senderName": "lmdc super, MD",
+      "readBy": [
+        {
+          "readUser": {
+            "type": "Provider",
+            "identifier": "C2DF2F3A1B7F464B9BCBFC2264BF4346",
+            "displayName": "lmdc super, MD",
+            "firstName": "lmdc",
+            "lastName": "super"
+          },
+          "readTimestamp": "2023-10-09T12:18:37.388Z"
+        },
+        {
+          "readUser": {
+            "type": "Provider",
+            "identifier": "432CF44517014CB6BA352B2C9DB816D9",
+            "displayName": "super tiny, MD",
+            "firstName": "super",
+            "lastName": "tiny"
+          },
+          "readTimestamp": "2023-10-09T16:49:59.886Z"
+        },
+        {
+          "readUser": {
+            "type": "Patient",
+            "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+            "displayName": "watson_james@yopmail.com",
+            "firstName": "Ajayyyy",
+            "lastName": "kase Brewerr",
+            "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+          },
+          "readTimestamp": "2025-11-18T11:46:20.196Z"
+        }
+      ],
+      "timeStamp": "2023-10-09T17:48:37.388",
+      "seen": true
+    },
+    {
+      "messageId": "2cbb3654-c620-4acf-ad2b-26b33d2895cf",
+      "messageType": "INCOMING",
+      "content": "New message by admin ad new new",
+      "senderName": "lmdc super, MD",
+      "readBy": [
+        {
+          "readUser": {
+            "type": "Provider",
+            "identifier": "C2DF2F3A1B7F464B9BCBFC2264BF4346",
+            "displayName": "lmdc super, MD",
+            "firstName": "lmdc",
+            "lastName": "super"
+          },
+          "readTimestamp": "2023-10-09T12:19:07.622Z"
+        },
+        {
+          "readUser": {
+            "type": "Provider",
+            "identifier": "432CF44517014CB6BA352B2C9DB816D9",
+            "displayName": "super tiny, MD",
+            "firstName": "super",
+            "lastName": "tiny"
+          },
+          "readTimestamp": "2023-10-09T16:49:59.857Z"
+        },
+        {
+          "readUser": {
+            "type": "Patient",
+            "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+            "displayName": "watson_james@yopmail.com",
+            "firstName": "Ajayyyy",
+            "lastName": "kase Brewerr",
+            "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+          },
+          "readTimestamp": "2025-11-18T11:46:20.177Z"
+        }
+      ],
+      "timeStamp": "2023-10-09T17:49:07.622",
+      "seen": true
+    },
+    {
+      "messageId": "a385c592-1d17-4c26-852e-cb7301cd2ce2",
+      "messageType": "CLOSE_AUTOMATED",
+      "content": "This conversation has been closed. Please start a new conversation if you have additional Requests.",
+      "senderName": "Automated message",
+      "readBy": [
+        {
+          "readUser": {
+            "type": "Provider",
+            "identifier": "432CF44517014CB6BA352B2C9DB816D9",
+            "displayName": "super tiny, MD",
+            "firstName": "super",
+            "lastName": "tiny"
+          },
+          "readTimestamp": "2023-10-09T16:50:05.197Z"
+        },
+        {
+          "readUser": {
+            "type": "Patient",
+            "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+            "displayName": "watson_james@yopmail.com",
+            "firstName": "Ajayyyy",
+            "lastName": "kase Brewerr",
+            "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+          },
+          "readTimestamp": "2025-11-18T11:46:20.191Z"
+        }
+      ],
+      "timeStamp": "2023-10-09T22:20:05.197",
+      "seen": true
+    }
+  ],
+  "subject": "Subject by ajay",
+  "purpose": "Medical Records",
+  "participants": ["super tiny, MD", "lmdc super, MD"],
+  "status": "CLOSED"
+}
