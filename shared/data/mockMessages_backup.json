@@ -4,40 +4,100 @@
     "data": [
       {
         "id": "conv_001",
-        "subject": "Prescription Request",
-        "participants": ["patient_001", "provider_001"],
+        "subject": "Chemotherapy Side Effects Discussion",
+        "participants": ["Sarah_Martinez", "Dr_Emily_Chen"],
         "messages": [
           {
-            "sender": "patient_001",
-            "text": "Can I get a refill for my blood pressure medication?",
+            "sender": "Sarah_Martinez",
+            "text": "Dr. Chen, I'm experiencing severe nausea after my last chemo session. It's been 3 days and I can barely keep water down.",
             "timestamp": "2025-08-01T09:23:00Z"
           },
           {
-            "sender": "provider_001",
-            "text": "Sure. I’ve sent the refill to your pharmacy.",
+            "sender": "Dr_Emily_Chen",
+            "text": "I'm sorry to hear you're struggling with this, Sarah. Severe nausea is a common side effect of your current regimen. Let's adjust your anti-nausea medication.",
+            "timestamp": "2025-08-01T09:35:00Z"
+          },
+          {
+            "sender": "Dr_Emily_Chen",
+            "text": "I'm prescribing Ondansetron 8mg twice daily and adding Prochlorperazine for breakthrough nausea. Also try eating small, bland meals every 2 hours.",
+            "timestamp": "2025-08-01T09:37:00Z"
+          },
+          {
+            "sender": "Sarah_Martinez",
+            "text": "Thank you. Should I be worried about dehydration? I've lost about 5 pounds this week.",
             "timestamp": "2025-08-01T10:12:00Z"
+          },
+          {
+            "sender": "Dr_Emily_Chen",
+            "text": "That is concerning. Please come in today for IV fluids. I'll have the infusion center prepare a bay for you around 2 PM.",
+            "timestamp": "2025-08-01T10:15:00Z"
+          },
+          {
+            "sender": "Sarah_Martinez",
+            "text": "Okay, I'll be there. My husband can drive me. Will this affect my next treatment cycle?",
+            "timestamp": "2025-08-01T10:30:00Z"
+          },
+          {
+            "sender": "Dr_Emily_Chen",
+            "text": "We may need to reduce the dose by 20% for your next cycle to manage these side effects better. Your safety and quality of life are our priority.",
+            "timestamp": "2025-08-01T10:45:00Z"
+          },
+          {
+            "sender": "Sarah_Martinez",
+            "text": "I understand. I just want to make sure we're still fighting this effectively.",
+            "timestamp": "2025-08-01T11:00:00Z"
+          },
+          {
+            "sender": "Dr_Emily_Chen",
+            "text": "Absolutely. Dose modifications don't compromise treatment effectiveness significantly, and keeping you healthy enough to continue treatment is essential.",
+            "timestamp": "2025-08-01T11:05:00Z"
+          },
+          {
+            "sender": "Sarah_Martinez",
+            "text": "Thank you for explaining that. It makes me feel better about the adjustment.",
+            "timestamp": "2025-08-01T11:20:00Z"
+          },
+          {
+            "sender": "Dr_Emily_Chen",
+            "text": "See you at 2 PM. Call immediately if you experience any severe symptoms before then.",
+            "timestamp": "2025-08-01T11:25:00Z"
           }
         ]
       },
       {
         "id": "conv_002",
-        "subject": "Appointment Request",
-        "participants": ["patient_002", "caregiver_001"],
+        "subject": "Post-Surgery Recovery Check",
+        "participants": ["Michael_Thompson", "Dr_Robert_Williams"],
         "messages": [
           {
-            "sender": "patient_002",
-            "text": "I need to book a follow-up appointment for my knee pain.",
-            "timestamp": "2025-08-01T11:45:00Z"
+            "sender": "Michael_Thompson",
+            "text": "Dr. Williams, it's been 2 weeks since my surgery. The incision site is healing well, but I'm still experiencing some pain.",
+            "timestamp": "2025-08-01T14:30:00Z"
           },
           {
-            "sender": "caregiver_001",
-            "text": "Would next Monday at 10am work for you?",
-            "timestamp": "2025-08-01T12:00:00Z"
+            "sender": "Dr_Robert_Williams",
+            "text": "Hi Michael. Post-surgical pain is normal at this stage. On a scale of 1-10, how would you rate your current pain level?",
+            "timestamp": "2025-08-01T14:45:00Z"
           },
           {
-            "sender": "patient_002",
-            "text": "Yes, that works. Please confirm it.",
-            "timestamp": "2025-08-01T12:05:00Z"
+            "sender": "Michael_Thompson",
+            "text": "It varies between 4-6 during the day, but gets worse at night, sometimes reaching 7-8.",
+            "timestamp": "2025-08-01T15:00:00Z"
+          },
+          {
+            "sender": "Dr_Robert_Williams",
+            "text": "That's within the expected range. Are you taking your prescribed pain medication as directed?",
+            "timestamp": "2025-08-01T15:15:00Z"
+          },
+          {
+            "sender": "Michael_Thompson",
+            "text": "Yes, but I'm worried about becoming dependent on them. Can I start reducing the dosage?",
+            "timestamp": "2025-08-01T15:30:00Z"
+          },
+          {
+            "sender": "Dr_Robert_Williams",
+            "text": "Your concern is understandable. Let's create a tapering schedule. We'll reduce by 25% this week and reassess next week.",
+            "timestamp": "2025-08-01T15:45:00Z"
           }
         ]
       }
@@ -48,40 +108,409 @@
     "data": [
       {
         "id": "conv_003",
-        "subject": "Symptom Reporting",
-        "participants": ["patient_003", "provider_002"],
+        "subject": "Treatment Plan Discussion - Lung Cancer",
+        "participants": ["Linda_Rodriguez", "Dr_James_Park"],
         "messages": [
           {
-            "sender": "patient_003",
-            "text": "I’ve been having headaches and dizziness lately.",
+            "sender": "Linda_Rodriguez",
+            "text": "Dr. Park, I've been thinking about our last conversation regarding my treatment options. I'm still nervous about starting immunotherapy.",
             "timestamp": "2025-08-02T08:10:00Z"
           },
           {
-            "sender": "provider_002",
-            "text": "Please monitor your blood pressure twice daily and log the readings.",
-            "timestamp": "2025-08-02T08:30:00Z"
+            "sender": "Dr_James_Park",
+            "text": "I understand your concerns, Linda. It's completely natural to feel anxious about starting a new treatment. What specific aspects worry you most?",
+            "timestamp": "2025-08-02T08:25:00Z"
+          },
+          {
+            "sender": "Linda_Rodriguez",
+            "text": "I've read about potential side effects like fatigue and immune-related complications. My friend had a bad experience with immunotherapy.",
+            "timestamp": "2025-08-02T08:40:00Z"
+          },
+          {
+            "sender": "Dr_James_Park",
+            "text": "I appreciate you sharing that. Every patient responds differently. Your tumor's PD-L1 expression is 85%, which indicates a high likelihood of positive response.",
+            "timestamp": "2025-08-02T09:00:00Z"
+          },
+          {
+            "sender": "Linda_Rodriguez",
+            "text": "That sounds promising. What would the treatment schedule look like?",
+            "timestamp": "2025-08-02T09:15:00Z"
+          },
+          {
+            "sender": "Dr_James_Park",
+            "text": "Pembrolizumab infusions every 3 weeks. Each session takes about 30 minutes. We'll monitor you closely with regular blood work and scans.",
+            "timestamp": "2025-08-02T09:30:00Z"
+          },
+          {
+            "sender": "Linda_Rodriguez",
+            "text": "How quickly might we see results? I know every case is different, but I'm trying to plan ahead.",
+            "timestamp": "2025-08-02T09:45:00Z"
+          },
+          {
+            "sender": "Dr_James_Park",
+            "text": "We typically do our first response evaluation after 8-12 weeks. Some patients notice improvement in symptoms earlier, but imaging gives us the definitive answer.",
+            "timestamp": "2025-08-02T10:00:00Z"
+          },
+          {
+            "sender": "Linda_Rodriguez",
+            "text": "What if it doesn't work? Do we have other options?",
+            "timestamp": "2025-08-02T10:15:00Z"
+          },
+          {
+            "sender": "Dr_James_Park",
+            "text": "Absolutely. We have several second-line options including combination therapies and targeted treatments based on your tumor's molecular profile.",
+            "timestamp": "2025-08-02T10:30:00Z"
+          },
+          {
+            "sender": "Linda_Rodriguez",
+            "text": "That's reassuring. I think I'm ready to proceed. When can we start?",
+            "timestamp": "2025-08-02T10:45:00Z"
+          },
+          {
+            "sender": "Dr_James_Park",
+            "text": "Excellent. I'll coordinate with the infusion center. We can likely start next week. I'll also connect you with our nurse navigator for additional support.",
+            "timestamp": "2025-08-02T11:00:00Z"
+          },
+          {
+            "sender": "Linda_Rodriguez",
+            "text": "Thank you, Dr. Park. Having all this information helps me feel more confident about moving forward.",
+            "timestamp": "2025-08-02T11:15:00Z"
           }
         ]
       },
       {
         "id": "conv_004",
-        "subject": "Lab Report Discussion",
-        "participants": ["provider_001", "patient_001"],
+        "subject": "Radiation Therapy Side Effects",
+        "participants": ["David_Kim", "Dr_Susan_Taylor"],
         "messages": [
           {
-            "sender": "provider_001",
-            "text": "Your blood test results came back normal, except slightly elevated cholesterol.",
+            "sender": "David_Kim",
+            "text": "Dr. Taylor, I'm halfway through my radiation treatments and the skin irritation is getting pretty uncomfortable.",
             "timestamp": "2025-08-02T14:20:00Z"
           },
           {
-            "sender": "patient_001",
-            "text": "Thanks for the update. Do I need to change my diet?",
-            "timestamp": "2025-08-02T14:45:00Z"
+            "sender": "Dr_Susan_Taylor",
+            "text": "That's expected at this point in your treatment course. Can you describe the irritation? Is it red, itchy, or painful?",
+            "timestamp": "2025-08-02T14:35:00Z"
           },
           {
-            "sender": "provider_001",
-            "text": "Yes. I recommend reducing saturated fats and increasing fiber intake.",
-            "timestamp": "2025-08-02T15:00:00Z"
+            "sender": "David_Kim",
+            "text": "It's red and feels like a bad sunburn. Some areas are starting to peel slightly.",
+            "timestamp": "2025-08-02T14:50:00Z"
+          },
+          {
+            "sender": "Dr_Susan_Taylor",
+            "text": "That sounds like grade 2 dermatitis, which is manageable. Use the Aquaphor cream I prescribed 3-4 times daily and avoid hot showers in that area.",
+            "timestamp": "2025-08-02T15:05:00Z"
+          }
+        ]
+      },
+      {
+        "id": "conv_005",
+        "subject": "Lab Results and Next Steps",
+        "participants": ["Angela_Foster", "Dr_Maria_Gonzalez"],
+        "messages": [
+          {
+            "sender": "Dr_Maria_Gonzalez",
+            "text": "Hi Angela, your latest blood work shows your white blood cell count is recovering nicely from last cycle.",
+            "timestamp": "2025-08-02T16:00:00Z"
+          },
+          {
+            "sender": "Angela_Foster",
+            "text": "That's great news! Does this mean we can proceed with the next treatment as scheduled?",
+            "timestamp": "2025-08-02T16:15:00Z"
+          },
+          {
+            "sender": "Dr_Maria_Gonzalez",
+            "text": "Yes, we're good to go for Thursday. Your platelets and neutrophil count are both in the safe range.",
+            "timestamp": "2025-08-02T16:30:00Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2025-08-03",
+    "data": [
+      {
+        "id": "conv_006",
+        "subject": "Palliative Care Consultation",
+        "participants": ["Robert_Johnson", "Dr_Patricia_Lee"],
+        "messages": [
+          {
+            "sender": "Robert_Johnson",
+            "text": "Dr. Lee, I wanted to discuss the palliative care referral Dr. Anderson mentioned. I'm not sure I fully understand what it involves.",
+            "timestamp": "2025-08-03T09:00:00Z"
+          },
+          {
+            "sender": "Dr_Patricia_Lee",
+            "text": "Hi Robert, I'm glad you reached out. Palliative care focuses on improving your quality of life alongside your cancer treatment, not replacing it.",
+            "timestamp": "2025-08-03T09:15:00Z"
+          },
+          {
+            "sender": "Robert_Johnson",
+            "text": "I was worried it meant giving up on treatment. My wife is concerned about that too.",
+            "timestamp": "2025-08-03T09:30:00Z"
+          },
+          {
+            "sender": "Dr_Patricia_Lee",
+            "text": "That's a common misconception. We'll work on managing your symptoms like fatigue and pain while you continue your oncology treatments.",
+            "timestamp": "2025-08-03T09:45:00Z"
+          },
+          {
+            "sender": "Robert_Johnson",
+            "text": "That makes more sense. The pain has been affecting my sleep and appetite lately.",
+            "timestamp": "2025-08-03T10:00:00Z"
+          },
+          {
+            "sender": "Dr_Patricia_Lee",
+            "text": "Exactly what we can help with. Better symptom management often helps patients tolerate their primary treatments better too.",
+            "timestamp": "2025-08-03T10:15:00Z"
+          },
+          {
+            "sender": "Robert_Johnson",
+            "text": "When could we start? I'd like to feel better during this process.",
+            "timestamp": "2025-08-03T10:30:00Z"
+          },
+          {
+            "sender": "Dr_Patricia_Lee",
+            "text": "I have an opening this Friday at 2 PM. We'll do a comprehensive assessment and create a comfort plan tailored to your needs.",
+            "timestamp": "2025-08-03T10:45:00Z"
+          }
+        ]
+      },
+      {
+        "id": "conv_007",
+        "subject": "Family Genetic Testing Discussion",
+        "participants": ["Jennifer_Walsh", "Dr_Kevin_Brown"],
+        "messages": [
+          {
+            "sender": "Jennifer_Walsh",
+            "text": "Dr. Brown, after my BRCA2 positive result, my daughter is asking about genetic testing. She's 28.",
+            "timestamp": "2025-08-03T11:30:00Z"
+          },
+          {
+            "sender": "Dr_Kevin_Brown",
+            "text": "That's a very important conversation. Given your positive BRCA2 status, she has a 50% chance of carrying the same mutation.",
+            "timestamp": "2025-08-03T11:45:00Z"
+          },
+          {
+            "sender": "Jennifer_Walsh",
+            "text": "What would that mean for her? I feel guilty that I might have passed this on.",
+            "timestamp": "2025-08-03T12:00:00Z"
+          },
+          {
+            "sender": "Dr_Kevin_Brown",
+            "text": "Please don't feel guilty - genetics aren't anyone's fault. If positive, she'd have increased surveillance options and preventive strategies available.",
+            "timestamp": "2025-08-03T12:15:00Z"
+          },
+          {
+            "sender": "Jennifer_Walsh",
+            "text": "Should she wait until she's older to test? I don't want to burden her unnecessarily.",
+            "timestamp": "2025-08-03T12:30:00Z"
+          },
+          {
+            "sender": "Dr_Kevin_Brown",
+            "text": "Testing at her age allows for early screening and informed life decisions. I'd recommend genetic counseling first to discuss all implications.",
+            "timestamp": "2025-08-03T12:45:00Z"
+          }
+        ]
+      },
+      {
+        "id": "conv_008",
+        "subject": "Clinical Trial Opportunity",
+        "participants": ["Thomas_Carter", "Dr_Rachel_Davis"],
+        "messages": [
+          {
+            "sender": "Dr_Rachel_Davis",
+            "text": "Thomas, I wanted to discuss a clinical trial that might be a good fit for your specific cancer type and stage.",
+            "timestamp": "2025-08-03T13:30:00Z"
+          },
+          {
+            "sender": "Thomas_Carter",
+            "text": "I'm interested to hear about it. My current treatment seems to be plateauing based on last week's scan.",
+            "timestamp": "2025-08-03T13:45:00Z"
+          },
+          {
+            "sender": "Dr_Rachel_Davis",
+            "text": "This is a Phase 2 trial combining immunotherapy with a new targeted agent. Early results show promise for your tumor type.",
+            "timestamp": "2025-08-03T14:00:00Z"
+          },
+          {
+            "sender": "Thomas_Carter",
+            "text": "What would participation involve? More hospital visits?",
+            "timestamp": "2025-08-03T14:15:00Z"
+          },
+          {
+            "sender": "Dr_Rachel_Davis",
+            "text": "Yes, more frequent monitoring initially - weekly visits for the first month, then every 2 weeks. All trial-related care is provided at no cost.",
+            "timestamp": "2025-08-03T14:30:00Z"
+          },
+          {
+            "sender": "Thomas_Carter",
+            "text": "Are there any risks I should know about?",
+            "timestamp": "2025-08-03T14:45:00Z"
+          },
+          {
+            "sender": "Dr_Rachel_Davis",
+            "text": "Potential side effects include fatigue and immune-related reactions, similar to standard immunotherapy but potentially milder with this combination.",
+            "timestamp": "2025-08-03T15:00:00Z"
+          },
+          {
+            "sender": "Thomas_Carter",
+            "text": "I'd like to discuss this with my family first. Can you send me the patient information sheet?",
+            "timestamp": "2025-08-03T15:15:00Z"
+          },
+          {
+            "sender": "Dr_Rachel_Davis",
+            "text": "Of course. I'll email you the complete trial information today. Take your time to review it thoroughly.",
+            "timestamp": "2025-08-03T15:30:00Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2025-08-04",
+    "data": [
+      {
+        "id": "conv_009",
+        "subject": "Metastatic Disease Discussion",
+        "participants": ["Elizabeth_Harper", "Dr_Andrew_Mitchell"],
+        "messages": [
+          {
+            "sender": "Dr_Andrew_Mitchell",
+            "text": "Elizabeth, I wanted to go over your latest imaging results with you. The scans show that the cancer has spread to your liver.",
+            "timestamp": "2025-08-04T10:00:00Z"
+          },
+          {
+            "sender": "Elizabeth_Harper",
+            "text": "I was afraid of this. What does this mean for my prognosis? Please be honest with me.",
+            "timestamp": "2025-08-04T10:15:00Z"
+          },
+          {
+            "sender": "Dr_Andrew_Mitchell",
+            "text": "This does change things, but we have effective treatments for metastatic disease. While it's more challenging, many patients live well with advanced cancer.",
+            "timestamp": "2025-08-04T10:30:00Z"
+          },
+          {
+            "sender": "Elizabeth_Harper",
+            "text": "What treatments are available? Will I need more aggressive chemotherapy?",
+            "timestamp": "2025-08-04T10:45:00Z"
+          },
+          {
+            "sender": "Dr_Andrew_Mitchell",
+            "text": "We have several options including targeted therapy based on your tumor's genetic makeup, immunotherapy, and yes, possibly combination chemotherapy.",
+            "timestamp": "2025-08-04T11:00:00Z"
+          },
+          {
+            "sender": "Elizabeth_Harper",
+            "text": "How long do I have? I need to know for planning purposes.",
+            "timestamp": "2025-08-04T11:15:00Z"
+          },
+          {
+            "sender": "Dr_Andrew_Mitchell",
+            "text": "It's hard to give exact timelines as everyone responds differently. Some patients with similar disease live for years. Let's focus on the treatment plan first.",
+            "timestamp": "2025-08-04T11:30:00Z"
+          },
+          {
+            "sender": "Elizabeth_Harper",
+            "text": "I understand. I want to fight this, but I also want quality time with my family.",
+            "timestamp": "2025-08-04T11:45:00Z"
+          },
+          {
+            "sender": "Dr_Andrew_Mitchell",
+            "text": "That's exactly the right approach. We'll work together to find treatments that control the cancer while maintaining your quality of life.",
+            "timestamp": "2025-08-04T12:00:00Z"
+          },
+          {
+            "sender": "Elizabeth_Harper",
+            "text": "Can I still travel? My daughter is getting married in 3 months.",
+            "timestamp": "2025-08-04T12:15:00Z"
+          },
+          {
+            "sender": "Dr_Andrew_Mitchell",
+            "text": "Absolutely. We'll plan your treatment schedule around important events. That wedding is a goal we'll work toward together.",
+            "timestamp": "2025-08-04T12:30:00Z"
+          },
+          {
+            "sender": "Elizabeth_Harper",
+            "text": "Thank you for being so understanding. When do we start the new treatment?",
+            "timestamp": "2025-08-04T12:45:00Z"
+          },
+          {
+            "sender": "Dr_Andrew_Mitchell",
+            "text": "We'll get the tumor biopsy for genetic testing first, then start within 2 weeks. I'll also connect you with our social worker for additional support.",
+            "timestamp": "2025-08-04T13:00:00Z"
+          },
+          {
+            "sender": "Elizabeth_Harper",
+            "text": "I appreciate all the support. This is scary, but I feel like I'm in good hands.",
+            "timestamp": "2025-08-04T13:15:00Z"
+          }
+        ]
+      },
+      {
+        "id": "conv_010",
+        "subject": "Bone Marrow Transplant Follow-up",
+        "participants": ["Marcus_Williams", "Dr_Lisa_Chang"],
+        "messages": [
+          {
+            "sender": "Marcus_Williams",
+            "text": "Dr. Chang, it's been 6 months since my transplant. I'm still feeling tired, but overall much better than before.",
+            "timestamp": "2025-08-04T14:00:00Z"
+          },
+          {
+            "sender": "Dr_Lisa_Chang",
+            "text": "That's wonderful to hear, Marcus. Fatigue is very common at this stage. Your latest blood counts look excellent - complete remission.",
+            "timestamp": "2025-08-04T14:15:00Z"
+          },
+          {
+            "sender": "Marcus_Williams",
+            "text": "That's the best news I've heard all year! Does this mean the leukemia is gone for good?",
+            "timestamp": "2025-08-04T14:30:00Z"
+          },
+          {
+            "sender": "Dr_Lisa_Chang",
+            "text": "We're very optimistic, but we'll continue close monitoring. The 6-month mark with these results is very encouraging.",
+            "timestamp": "2025-08-04T14:45:00Z"
+          },
+          {
+            "sender": "Marcus_Williams",
+            "text": "When can I get back to normal activities? I miss playing basketball with my kids.",
+            "timestamp": "2025-08-04T15:00:00Z"
+          },
+          {
+            "sender": "Dr_Lisa_Chang",
+            "text": "Light activities are fine now. Full contact sports should wait until the 1-year mark, but you can definitely start shooting hoops!",
+            "timestamp": "2025-08-04T15:15:00Z"
+          }
+        ]
+      },
+      {
+        "id": "conv_011",
+        "subject": "Survivorship Care Planning",
+        "participants": ["Nancy_Peterson", "Dr_Michael_Torres"],
+        "messages": [
+          {
+            "sender": "Nancy_Peterson",
+            "text": "Dr. Torres, it's been 2 years since I completed treatment. I'm nervous about my upcoming scans.",
+            "timestamp": "2025-08-04T16:00:00Z"
+          },
+          {
+            "sender": "Dr_Michael_Torres",
+            "text": "Scanxiety is completely normal, Nancy. You've been doing great with your follow-up appointments. How are you feeling overall?",
+            "timestamp": "2025-08-04T16:15:00Z"
+          },
+          {
+            "sender": "Nancy_Peterson",
+            "text": "Physically I feel good, but every little ache makes me worry. Is that normal?",
+            "timestamp": "2025-08-04T16:30:00Z"
+          },
+          {
+            "sender": "Dr_Michael_Torres",
+            "text": "Very normal. Many survivors experience this. Have you considered joining our survivorship support group?",
+            "timestamp": "2025-08-04T16:45:00Z"
           }
         ]
       }

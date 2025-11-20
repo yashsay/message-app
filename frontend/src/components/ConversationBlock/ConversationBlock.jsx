@@ -33,11 +33,17 @@ ConversationBlock.propTypes = {
   conversationId: PropTypes.string.isRequired,
   messages: PropTypes.arrayOf(
     PropTypes.shape({
+      messageId: PropTypes.string,
+      messageType: PropTypes.string,
       sender: PropTypes.string,
       participant: PropTypes.string,
       timestamp: PropTypes.string,
       text: PropTypes.string,
       snippet: PropTypes.string,
+      purpose: PropTypes.string,
+      participants: PropTypes.arrayOf(PropTypes.string),
+      hasAttachments: PropTypes.bool,
+      seen: PropTypes.bool,
     })
   ).isRequired,
   summary: PropTypes.shape({

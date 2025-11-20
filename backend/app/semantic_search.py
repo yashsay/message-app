@@ -208,7 +208,8 @@ class SemanticSearchEngine:
             - conversationId: ID of the conversation containing the message
             - messageId: Unique identifier of the message
             - snippet: The actual message text content
-            - participant: Message author/sender information
+            - participant: Message author/sender information (alias for sender)
+            - sender: Message author/sender information
             - timestamp: When the message was sent
             - score: Cosine similarity score (higher = more similar, range 0-1)
 
@@ -261,9 +262,10 @@ class SemanticSearchEngine:
             # Note: With cosine similarity, higher scores indicate better matches
             search_result = {
                 "conversationId": message_data.get("conversationId"),
-                "messageId": message_data.get("id"),
+                "messageId": message_data.get("messageId"),
                 "snippet": message_data.get("text"),
-                "participant": message_data.get("participant"),
+                "participant": message_data.get("sender"),
+                "sender": message_data.get("sender"),
                 "timestamp": message_data.get("timestamp"),
                 "score": float(similarity_score)  # Cosine similarity score (higher = more similar)
             }

@@ -13,16 +13,27 @@ with open(input_path, "r") as f:
 flattened = []
 
 # Flatten the nested messages
-for group in data:
-    for conv in group["data"]:
-        for msg in conv["messages"]:
-            flattened.append({
-                "conversationId": conv["id"],
-                "subject": conv.get("subject", ""),
-                "sender": msg["sender"],
-                "text": msg["text"],
-                "timestamp": msg["timestamp"]
-            })
+# New structure: array of conversation objects, each with messageResponse array
+for conversation in data:
+    conversation_id = conversation.get("conversationId", "unknown")
+    subject = conversation.get("subject", "")
+    purpose = conversation.get("purpose", "")
+    participants = conversation.get("participants", [])
+
+    for msg in conversation.get("messageResponse", []):
+        flattened.append({
+            "conversationId": conversation_id,
+            "subject": subject,
+            "purpose": purpose,
+            "participants": participants,
+            "messageId": msg.get("messageId", ""),
+            "messageType": msg.get("messageType", ""),
+            "sender": msg.get("senderName", "Unknown"),
+            "text": msg.get("content", ""),
+            "timestamp": msg.get("timeStamp", ""),
+            "seen": msg.get("seen", False),
+            "hasAttachments": len(msg.get("attachments", [])) > 0
+        })
 
 # Save to output file
 with open(output_path, "w") as f:

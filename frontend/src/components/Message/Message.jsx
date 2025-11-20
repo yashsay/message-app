@@ -7,10 +7,13 @@ const Message = ({ message }) => {
     : message.participant || "UNKNOWN";
 
   // Determine if this is a patient or provider message
+  // Check for provider indicators: "Dr_", "DOCTOR", "PHYSICIAN", "MD", or automated messages
   const isProvider =
     sender.includes("DR_") ||
     sender.includes("DOCTOR") ||
-    sender.includes("PHYSICIAN");
+    sender.includes("PHYSICIAN") ||
+    sender.includes("MD") ||
+    sender.includes("AUTOMATED");
   const messageType = isProvider ? "provider" : "patient";
 
   let formattedTime = message.timestamp;
@@ -42,11 +45,17 @@ const Message = ({ message }) => {
 
 Message.propTypes = {
   message: PropTypes.shape({
+    messageId: PropTypes.string,
+    messageType: PropTypes.string,
     sender: PropTypes.string,
     participant: PropTypes.string,
     timestamp: PropTypes.string,
     text: PropTypes.string,
     snippet: PropTypes.string,
+    purpose: PropTypes.string,
+    participants: PropTypes.arrayOf(PropTypes.string),
+    hasAttachments: PropTypes.bool,
+    seen: PropTypes.bool,
   }).isRequired,
 };
 

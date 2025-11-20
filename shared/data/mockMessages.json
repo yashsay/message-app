@@ -1,520 +1,2490 @@
 [
   {
-    "date": "2025-08-01",
-    "data": [
+    "messageResponse": [
       {
-        "id": "conv_001",
-        "subject": "Chemotherapy Side Effects Discussion",
-        "participants": ["Sarah_Martinez", "Dr_Emily_Chen"],
-        "messages": [
+        "messageId": "151ef292-5ff9-4f4a-92d0-f9b2bde79afe",
+        "messageType": "OUTGOING",
+        "content": "Message for Medication Refills",
+        "senderName": "Ajayy",
+        "readBy": [
           {
-            "sender": "Sarah_Martinez",
-            "text": "Dr. Chen, I'm experiencing severe nausea after my last chemo session. It's been 3 days and I can barely keep water down.",
-            "timestamp": "2025-08-01T09:23:00Z"
-          },
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-01-07T05:35:04.148Z"
+          }
+        ],
+        "timeStamp": "2025-01-07T11:05:04.148",
+        "seen": true,
+        "attachments": [
           {
-            "sender": "Dr_Emily_Chen",
-            "text": "I'm sorry to hear you're struggling with this, Sarah. Severe nausea is a common side effect of your current regimen. Let's adjust your anti-nausea medication.",
-            "timestamp": "2025-08-01T09:35:00Z"
-          },
-          {
-            "sender": "Dr_Emily_Chen",
-            "text": "I'm prescribing Ondansetron 8mg twice daily and adding Prochlorperazine for breakthrough nausea. Also try eating small, bland meals every 2 hours.",
-            "timestamp": "2025-08-01T09:37:00Z"
-          },
-          {
-            "sender": "Sarah_Martinez",
-            "text": "Thank you. Should I be worried about dehydration? I've lost about 5 pounds this week.",
-            "timestamp": "2025-08-01T10:12:00Z"
-          },
-          {
-            "sender": "Dr_Emily_Chen",
-            "text": "That is concerning. Please come in today for IV fluids. I'll have the infusion center prepare a bay for you around 2 PM.",
-            "timestamp": "2025-08-01T10:15:00Z"
-          },
-          {
-            "sender": "Sarah_Martinez",
-            "text": "Okay, I'll be there. My husband can drive me. Will this affect my next treatment cycle?",
-            "timestamp": "2025-08-01T10:30:00Z"
-          },
-          {
-            "sender": "Dr_Emily_Chen",
-            "text": "We may need to reduce the dose by 20% for your next cycle to manage these side effects better. Your safety and quality of life are our priority.",
-            "timestamp": "2025-08-01T10:45:00Z"
-          },
-          {
-            "sender": "Sarah_Martinez",
-            "text": "I understand. I just want to make sure we're still fighting this effectively.",
-            "timestamp": "2025-08-01T11:00:00Z"
-          },
-          {
-            "sender": "Dr_Emily_Chen",
-            "text": "Absolutely. Dose modifications don't compromise treatment effectiveness significantly, and keeping you healthy enough to continue treatment is essential.",
-            "timestamp": "2025-08-01T11:05:00Z"
-          },
-          {
-            "sender": "Sarah_Martinez",
-            "text": "Thank you for explaining that. It makes me feel better about the adjustment.",
-            "timestamp": "2025-08-01T11:20:00Z"
-          },
-          {
-            "sender": "Dr_Emily_Chen",
-            "text": "See you at 2 PM. Call immediately if you experience any severe symptoms before then.",
-            "timestamp": "2025-08-01T11:25:00Z"
+            "createdBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "updatedBy": {
+              "type": "Provider",
+              "identifier": "F15FA839D7C642FBB9DA4FB586074CC5",
+              "displayName": "Ontada Test",
+              "firstName": "Ontada",
+              "lastName": "Test"
+            },
+            "createdDate": "2025-01-07T05:35:04.148Z",
+            "updatedDate": "2025-01-07T05:35:09.036Z",
+            "name": "mcp.log",
+            "mimeType": "image/jpg",
+            "bytes": 2024,
+            "storagePath": "mcp/mcp.log"
           }
         ]
       },
       {
-        "id": "conv_002",
-        "subject": "Post-Surgery Recovery Check",
-        "participants": ["Michael_Thompson", "Dr_Robert_Williams"],
-        "messages": [
+        "messageId": "0a7e8f7c-ce20-4816-b97b-4ec75cd04534",
+        "messageType": "START_AUTOMATED",
+        "content": "We have successfully received your message. Your care team will contact you shortly.",
+        "senderName": "Automated message",
+        "readBy": [
           {
-            "sender": "Michael_Thompson",
-            "text": "Dr. Williams, it's been 2 weeks since my surgery. The incision site is healing well, but I'm still experiencing some pain.",
-            "timestamp": "2025-08-01T14:30:00Z"
-          },
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-01-07T05:35:04.162Z"
+          }
+        ],
+        "timeStamp": "2025-01-07T11:05:04.162",
+        "seen": true
+      },
+      {
+        "messageId": "40bd5daf-bc51-4c43-a497-365c152cbe54",
+        "messageType": "OUTGOING",
+        "content": "Adding Attachments to Message for testing purpose ",
+        "senderName": "Ajayy",
+        "readBy": [
           {
-            "sender": "Dr_Robert_Williams",
-            "text": "Hi Michael. Post-surgical pain is normal at this stage. On a scale of 1-10, how would you rate your current pain level?",
-            "timestamp": "2025-08-01T14:45:00Z"
-          },
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-01-07T05:35:04.418Z"
+          }
+        ],
+        "timeStamp": "2025-01-07T11:05:04.419",
+        "seen": true,
+        "attachments": [
           {
-            "sender": "Michael_Thompson",
-            "text": "It varies between 4-6 during the day, but gets worse at night, sometimes reaching 7-8.",
-            "timestamp": "2025-08-01T15:00:00Z"
-          },
-          {
-            "sender": "Dr_Robert_Williams",
-            "text": "That's within the expected range. Are you taking your prescribed pain medication as directed?",
-            "timestamp": "2025-08-01T15:15:00Z"
-          },
-          {
-            "sender": "Michael_Thompson",
-            "text": "Yes, but I'm worried about becoming dependent on them. Can I start reducing the dosage?",
-            "timestamp": "2025-08-01T15:30:00Z"
-          },
-          {
-            "sender": "Dr_Robert_Williams",
-            "text": "Your concern is understandable. Let's create a tapering schedule. We'll reduce by 25% this week and reassess next week.",
-            "timestamp": "2025-08-01T15:45:00Z"
+            "createdBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "updatedBy": {
+              "type": "Provider",
+              "identifier": "F15FA839D7C642FBB9DA4FB586074CC5",
+              "displayName": "Ontada Test",
+              "firstName": "Ontada",
+              "lastName": "Test"
+            },
+            "createdDate": "2025-01-07T05:35:07.197Z",
+            "updatedDate": "2025-01-07T05:35:09.036Z",
+            "name": "mcp.log",
+            "mimeType": "image/jpg",
+            "bytes": 2024,
+            "storagePath": "mcp/mcp.log"
           }
         ]
+      },
+      {
+        "messageId": "522d9335-1373-45a5-8ce5-fd90ae71e7a2",
+        "messageType": "OUTGOING",
+        "content": "Adding Message to Conversation for testing timestamp",
+        "senderName": "Ajayy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-01-07T05:35:04.714Z"
+          },
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-01-07T05:35:04.954Z"
+          },
+          {
+            "readUser": {
+              "type": "Provider",
+              "identifier": "F15FA839D7C642FBB9DA4FB586074CC5",
+              "displayName": "Ontada Test1",
+              "firstName": "Ontada",
+              "lastName": "Test"
+            },
+            "readTimestamp": "2025-01-07T05:35:10.132Z"
+          }
+        ],
+        "timeStamp": "2025-01-07T11:05:04.714",
+        "seen": true
+      },
+      {
+        "messageId": "4659740d-6b73-453f-85c6-2ebae7902d5b",
+        "messageType": "CLOSE_AUTOMATED",
+        "content": "This conversation has been closed. Please start a new conversation if you have additional Requests.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-01-07T05:35:07.192Z"
+          }
+        ],
+        "timeStamp": "2025-01-07T11:05:07.192",
+        "seen": true
+      },
+      {
+        "messageId": "f166c977-f35d-44ec-9de4-4843756226a8",
+        "messageType": "CLOSE_AUTOMATED",
+        "content": "This conversation has been closed. Please start a new conversation if you have additional Requests.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Provider",
+              "identifier": "F15FA839D7C642FBB9DA4FB586074CC5",
+              "displayName": "Ontada Test1",
+              "firstName": "Ontada",
+              "lastName": "Test"
+            },
+            "readTimestamp": "2025-01-07T05:35:09.031Z"
+          },
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-01-07T06:01:55.01Z"
+          }
+        ],
+        "timeStamp": "2025-01-07T11:05:09.031",
+        "seen": true
       }
-    ]
+    ],
+    "subject": "Message for Medication Understanding",
+    "purpose": "Medication Refills",
+    "participants": ["Ontada Test1", "Paul Watkins, MD"],
+    "status": "CLOSED",
+    "conversationId": "cb37190c-10e4-4357-888d-87c7df0d1303"
   },
   {
-    "date": "2025-08-02",
-    "data": [
+    "messageResponse": [
       {
-        "id": "conv_003",
-        "subject": "Treatment Plan Discussion - Lung Cancer",
-        "participants": ["Linda_Rodriguez", "Dr_James_Park"],
-        "messages": [
+        "messageId": "d7d71b8f-dd1f-4a15-954f-e031a04e0aca",
+        "messageType": "OUTGOING",
+        "content": "Message for Medication Refills",
+        "senderName": "Ajayyyy",
+        "readBy": [
           {
-            "sender": "Linda_Rodriguez",
-            "text": "Dr. Park, I've been thinking about our last conversation regarding my treatment options. I'm still nervous about starting immunotherapy.",
-            "timestamp": "2025-08-02T08:10:00Z"
-          },
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-20T05:37:27.531Z"
+          }
+        ],
+        "timeStamp": "2025-11-20T11:07:27.532",
+        "seen": true,
+        "attachments": [
           {
-            "sender": "Dr_James_Park",
-            "text": "I understand your concerns, Linda. It's completely natural to feel anxious about starting a new treatment. What specific aspects worry you most?",
-            "timestamp": "2025-08-02T08:25:00Z"
-          },
-          {
-            "sender": "Linda_Rodriguez",
-            "text": "I've read about potential side effects like fatigue and immune-related complications. My friend had a bad experience with immunotherapy.",
-            "timestamp": "2025-08-02T08:40:00Z"
-          },
-          {
-            "sender": "Dr_James_Park",
-            "text": "I appreciate you sharing that. Every patient responds differently. Your tumor's PD-L1 expression is 85%, which indicates a high likelihood of positive response.",
-            "timestamp": "2025-08-02T09:00:00Z"
-          },
-          {
-            "sender": "Linda_Rodriguez",
-            "text": "That sounds promising. What would the treatment schedule look like?",
-            "timestamp": "2025-08-02T09:15:00Z"
-          },
-          {
-            "sender": "Dr_James_Park",
-            "text": "Pembrolizumab infusions every 3 weeks. Each session takes about 30 minutes. We'll monitor you closely with regular blood work and scans.",
-            "timestamp": "2025-08-02T09:30:00Z"
-          },
-          {
-            "sender": "Linda_Rodriguez",
-            "text": "How quickly might we see results? I know every case is different, but I'm trying to plan ahead.",
-            "timestamp": "2025-08-02T09:45:00Z"
-          },
-          {
-            "sender": "Dr_James_Park",
-            "text": "We typically do our first response evaluation after 8-12 weeks. Some patients notice improvement in symptoms earlier, but imaging gives us the definitive answer.",
-            "timestamp": "2025-08-02T10:00:00Z"
-          },
-          {
-            "sender": "Linda_Rodriguez",
-            "text": "What if it doesn't work? Do we have other options?",
-            "timestamp": "2025-08-02T10:15:00Z"
-          },
-          {
-            "sender": "Dr_James_Park",
-            "text": "Absolutely. We have several second-line options including combination therapies and targeted treatments based on your tumor's molecular profile.",
-            "timestamp": "2025-08-02T10:30:00Z"
-          },
-          {
-            "sender": "Linda_Rodriguez",
-            "text": "That's reassuring. I think I'm ready to proceed. When can we start?",
-            "timestamp": "2025-08-02T10:45:00Z"
-          },
-          {
-            "sender": "Dr_James_Park",
-            "text": "Excellent. I'll coordinate with the infusion center. We can likely start next week. I'll also connect you with our nurse navigator for additional support.",
-            "timestamp": "2025-08-02T11:00:00Z"
-          },
-          {
-            "sender": "Linda_Rodriguez",
-            "text": "Thank you, Dr. Park. Having all this information helps me feel more confident about moving forward.",
-            "timestamp": "2025-08-02T11:15:00Z"
+            "createdBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "updatedBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "createdDate": "2025-11-20T05:37:27.532Z",
+            "updatedDate": "2025-11-20T05:37:31.401Z",
+            "name": "mcp.log",
+            "mimeType": "image/jpg",
+            "bytes": 2024,
+            "storagePath": "mcp/mcp.log"
           }
         ]
       },
       {
-        "id": "conv_004",
-        "subject": "Radiation Therapy Side Effects",
-        "participants": ["David_Kim", "Dr_Susan_Taylor"],
-        "messages": [
+        "messageId": "fdcbd63a-633c-45a5-a4e4-60aeab32854d",
+        "messageType": "START_AUTOMATED",
+        "content": "We have successfully received your message. Your care team will contact you shortly.",
+        "senderName": "Automated message",
+        "readBy": [
           {
-            "sender": "David_Kim",
-            "text": "Dr. Taylor, I'm halfway through my radiation treatments and the skin irritation is getting pretty uncomfortable.",
-            "timestamp": "2025-08-02T14:20:00Z"
-          },
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-20T05:37:27.547Z"
+          }
+        ],
+        "timeStamp": "2025-11-20T11:07:27.547",
+        "seen": true
+      },
+      {
+        "messageId": "3093dec6-782e-4b8b-ab2b-7faaef7bfd79",
+        "messageType": "OUTGOING",
+        "content": "Adding Attachments to Message for testing purpose ",
+        "senderName": "Ajayyyy",
+        "readBy": [
           {
-            "sender": "Dr_Susan_Taylor",
-            "text": "That's expected at this point in your treatment course. Can you describe the irritation? Is it red, itchy, or painful?",
-            "timestamp": "2025-08-02T14:35:00Z"
-          },
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-20T05:37:27.796Z"
+          }
+        ],
+        "timeStamp": "2025-11-20T11:07:27.796",
+        "seen": true,
+        "attachments": [
           {
-            "sender": "David_Kim",
-            "text": "It's red and feels like a bad sunburn. Some areas are starting to peel slightly.",
-            "timestamp": "2025-08-02T14:50:00Z"
-          },
-          {
-            "sender": "Dr_Susan_Taylor",
-            "text": "That sounds like grade 2 dermatitis, which is manageable. Use the Aquaphor cream I prescribed 3-4 times daily and avoid hot showers in that area.",
-            "timestamp": "2025-08-02T15:05:00Z"
+            "createdBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "updatedBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "createdDate": "2025-11-20T05:37:31.401Z",
+            "updatedDate": "2025-11-20T05:37:31.401Z",
+            "name": "mcp.log",
+            "mimeType": "image/jpg",
+            "bytes": 2024,
+            "storagePath": "mcp/mcp.log"
           }
         ]
       },
       {
-        "id": "conv_005",
-        "subject": "Lab Results and Next Steps",
-        "participants": ["Angela_Foster", "Dr_Maria_Gonzalez"],
-        "messages": [
+        "messageId": "8aefc588-d3a8-4f16-ab58-e5779c2055d3",
+        "messageType": "OUTGOING",
+        "content": "Adding Message to Conversation for testing timestamp",
+        "senderName": "Ajayyyy",
+        "readBy": [
           {
-            "sender": "Dr_Maria_Gonzalez",
-            "text": "Hi Angela, your latest blood work shows your white blood cell count is recovering nicely from last cycle.",
-            "timestamp": "2025-08-02T16:00:00Z"
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-20T05:37:28.018Z"
           },
           {
-            "sender": "Angela_Foster",
-            "text": "That's great news! Does this mean we can proceed with the next treatment as scheduled?",
-            "timestamp": "2025-08-02T16:15:00Z"
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-20T05:37:28.233Z"
           },
           {
-            "sender": "Dr_Maria_Gonzalez",
-            "text": "Yes, we're good to go for Thursday. Your platelets and neutrophil count are both in the safe range.",
-            "timestamp": "2025-08-02T16:30:00Z"
+            "readUser": {
+              "type": "Provider",
+              "identifier": "9D02914C6FAA4E218BB042ABF50F603C",
+              "displayName": "Ontada Health Test",
+              "firstName": "Ontada",
+              "lastName": "Health Test"
+            },
+            "readTimestamp": "2025-11-20T05:37:35.119Z"
           }
-        ]
+        ],
+        "timeStamp": "2025-11-20T11:07:28.019",
+        "seen": true
+      },
+      {
+        "messageId": "8498f22e-ca29-4d85-8643-f64354fa09b5",
+        "messageType": "CLOSE_AUTOMATED",
+        "content": "This conversation has been closed. Please start a new conversation if you have additional Requests.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-20T05:37:31.401Z"
+          }
+        ],
+        "timeStamp": "2025-11-20T11:07:31.401",
+        "seen": true
       }
-    ]
-  }
-,
-  {
-    "date": "2025-08-03",
-    "data": [
-      {
-        "id": "conv_006",
-        "subject": "Palliative Care Consultation",
-        "participants": ["Robert_Johnson", "Dr_Patricia_Lee"],
-        "messages": [
-          {
-            "sender": "Robert_Johnson",
-            "text": "Dr. Lee, I wanted to discuss the palliative care referral Dr. Anderson mentioned. I'm not sure I fully understand what it involves.",
-            "timestamp": "2025-08-03T09:00:00Z"
-          },
-          {
-            "sender": "Dr_Patricia_Lee",
-            "text": "Hi Robert, I'm glad you reached out. Palliative care focuses on improving your quality of life alongside your cancer treatment, not replacing it.",
-            "timestamp": "2025-08-03T09:15:00Z"
-          },
-          {
-            "sender": "Robert_Johnson",
-            "text": "I was worried it meant giving up on treatment. My wife is concerned about that too.",
-            "timestamp": "2025-08-03T09:30:00Z"
-          },
-          {
-            "sender": "Dr_Patricia_Lee",
-            "text": "That's a common misconception. We'll work on managing your symptoms like fatigue and pain while you continue your oncology treatments.",
-            "timestamp": "2025-08-03T09:45:00Z"
-          },
-          {
-            "sender": "Robert_Johnson",
-            "text": "That makes more sense. The pain has been affecting my sleep and appetite lately.",
-            "timestamp": "2025-08-03T10:00:00Z"
-          },
-          {
-            "sender": "Dr_Patricia_Lee",
-            "text": "Exactly what we can help with. Better symptom management often helps patients tolerate their primary treatments better too.",
-            "timestamp": "2025-08-03T10:15:00Z"
-          },
-          {
-            "sender": "Robert_Johnson",
-            "text": "When could we start? I'd like to feel better during this process.",
-            "timestamp": "2025-08-03T10:30:00Z"
-          },
-          {
-            "sender": "Dr_Patricia_Lee",
-            "text": "I have an opening this Friday at 2 PM. We'll do a comprehensive assessment and create a comfort plan tailored to your needs.",
-            "timestamp": "2025-08-03T10:45:00Z"
-          }
-        ]
-      },
-      {
-        "id": "conv_007",
-        "subject": "Family Genetic Testing Discussion",
-        "participants": ["Jennifer_Walsh", "Dr_Kevin_Brown"],
-        "messages": [
-          {
-            "sender": "Jennifer_Walsh",
-            "text": "Dr. Brown, after my BRCA2 positive result, my daughter is asking about genetic testing. She's 28.",
-            "timestamp": "2025-08-03T11:30:00Z"
-          },
-          {
-            "sender": "Dr_Kevin_Brown",
-            "text": "That's a very important conversation. Given your positive BRCA2 status, she has a 50% chance of carrying the same mutation.",
-            "timestamp": "2025-08-03T11:45:00Z"
-          },
-          {
-            "sender": "Jennifer_Walsh",
-            "text": "What would that mean for her? I feel guilty that I might have passed this on.",
-            "timestamp": "2025-08-03T12:00:00Z"
-          },
-          {
-            "sender": "Dr_Kevin_Brown",
-            "text": "Please don't feel guilty - genetics aren't anyone's fault. If positive, she'd have increased surveillance options and preventive strategies available.",
-            "timestamp": "2025-08-03T12:15:00Z"
-          },
-          {
-            "sender": "Jennifer_Walsh",
-            "text": "Should she wait until she's older to test? I don't want to burden her unnecessarily.",
-            "timestamp": "2025-08-03T12:30:00Z"
-          },
-          {
-            "sender": "Dr_Kevin_Brown",
-            "text": "Testing at her age allows for early screening and informed life decisions. I'd recommend genetic counseling first to discuss all implications.",
-            "timestamp": "2025-08-03T12:45:00Z"
-          }
-        ]
-      },
-      {
-        "id": "conv_008",
-        "subject": "Clinical Trial Opportunity",
-        "participants": ["Thomas_Carter", "Dr_Rachel_Davis"],
-        "messages": [
-          {
-            "sender": "Dr_Rachel_Davis",
-            "text": "Thomas, I wanted to discuss a clinical trial that might be a good fit for your specific cancer type and stage.",
-            "timestamp": "2025-08-03T13:30:00Z"
-          },
-          {
-            "sender": "Thomas_Carter",
-            "text": "I'm interested to hear about it. My current treatment seems to be plateauing based on last week's scan.",
-            "timestamp": "2025-08-03T13:45:00Z"
-          },
-          {
-            "sender": "Dr_Rachel_Davis",
-            "text": "This is a Phase 2 trial combining immunotherapy with a new targeted agent. Early results show promise for your tumor type.",
-            "timestamp": "2025-08-03T14:00:00Z"
-          },
-          {
-            "sender": "Thomas_Carter",
-            "text": "What would participation involve? More hospital visits?",
-            "timestamp": "2025-08-03T14:15:00Z"
-          },
-          {
-            "sender": "Dr_Rachel_Davis",
-            "text": "Yes, more frequent monitoring initially - weekly visits for the first month, then every 2 weeks. All trial-related care is provided at no cost.",
-            "timestamp": "2025-08-03T14:30:00Z"
-          },
-          {
-            "sender": "Thomas_Carter",
-            "text": "Are there any risks I should know about?",
-            "timestamp": "2025-08-03T14:45:00Z"
-          },
-          {
-            "sender": "Dr_Rachel_Davis",
-            "text": "Potential side effects include fatigue and immune-related reactions, similar to standard immunotherapy but potentially milder with this combination.",
-            "timestamp": "2025-08-03T15:00:00Z"
-          },
-          {
-            "sender": "Thomas_Carter",
-            "text": "I'd like to discuss this with my family first. Can you send me the patient information sheet?",
-            "timestamp": "2025-08-03T15:15:00Z"
-          },
-          {
-            "sender": "Dr_Rachel_Davis",
-            "text": "Of course. I'll email you the complete trial information today. Take your time to review it thoroughly.",
-            "timestamp": "2025-08-03T15:30:00Z"
-          }
-        ]
-      }
-    ]
+    ],
+    "subject": "Message for Medication Understanding",
+    "purpose": "Medication Refills",
+    "participants": ["Paul Watkins, MD"],
+    "status": "CLOSED",
+    "conversationId": "3671a3be-2ffe-4dde-b1e4-81cefb81f56d"
   },
   {
-    "date": "2025-08-04",
-    "data": [
+    "messageResponse": [
       {
-        "id": "conv_009",
-        "subject": "Metastatic Disease Discussion",
-        "participants": ["Elizabeth_Harper", "Dr_Andrew_Mitchell"],
-        "messages": [
+        "messageId": "1002e9e5-fe4f-4983-a224-4539ef946d33",
+        "messageType": "OUTGOING",
+        "content": "Test for readinfo check via local",
+        "senderName": "Ajayyyy",
+        "readBy": [
           {
-            "sender": "Dr_Andrew_Mitchell",
-            "text": "Elizabeth, I wanted to go over your latest imaging results with you. The scans show that the cancer has spread to your liver.",
-            "timestamp": "2025-08-04T10:00:00Z"
-          },
-          {
-            "sender": "Elizabeth_Harper",
-            "text": "I was afraid of this. What does this mean for my prognosis? Please be honest with me.",
-            "timestamp": "2025-08-04T10:15:00Z"
-          },
-          {
-            "sender": "Dr_Andrew_Mitchell",
-            "text": "This does change things, but we have effective treatments for metastatic disease. While it's more challenging, many patients live well with advanced cancer.",
-            "timestamp": "2025-08-04T10:30:00Z"
-          },
-          {
-            "sender": "Elizabeth_Harper",
-            "text": "What treatments are available? Will I need more aggressive chemotherapy?",
-            "timestamp": "2025-08-04T10:45:00Z"
-          },
-          {
-            "sender": "Dr_Andrew_Mitchell",
-            "text": "We have several options including targeted therapy based on your tumor's genetic makeup, immunotherapy, and yes, possibly combination chemotherapy.",
-            "timestamp": "2025-08-04T11:00:00Z"
-          },
-          {
-            "sender": "Elizabeth_Harper",
-            "text": "How long do I have? I need to know for planning purposes.",
-            "timestamp": "2025-08-04T11:15:00Z"
-          },
-          {
-            "sender": "Dr_Andrew_Mitchell",
-            "text": "It's hard to give exact timelines as everyone responds differently. Some patients with similar disease live for years. Let's focus on the treatment plan first.",
-            "timestamp": "2025-08-04T11:30:00Z"
-          },
-          {
-            "sender": "Elizabeth_Harper",
-            "text": "I understand. I want to fight this, but I also want quality time with my family.",
-            "timestamp": "2025-08-04T11:45:00Z"
-          },
-          {
-            "sender": "Dr_Andrew_Mitchell",
-            "text": "That's exactly the right approach. We'll work together to find treatments that control the cancer while maintaining your quality of life.",
-            "timestamp": "2025-08-04T12:00:00Z"
-          },
-          {
-            "sender": "Elizabeth_Harper",
-            "text": "Can I still travel? My daughter is getting married in 3 months.",
-            "timestamp": "2025-08-04T12:15:00Z"
-          },
-          {
-            "sender": "Dr_Andrew_Mitchell",
-            "text": "Absolutely. We'll plan your treatment schedule around important events. That wedding is a goal we'll work toward together.",
-            "timestamp": "2025-08-04T12:30:00Z"
-          },
-          {
-            "sender": "Elizabeth_Harper",
-            "text": "Thank you for being so understanding. When do we start the new treatment?",
-            "timestamp": "2025-08-04T12:45:00Z"
-          },
-          {
-            "sender": "Dr_Andrew_Mitchell",
-            "text": "We'll get the tumor biopsy for genetic testing first, then start within 2 weeks. I'll also connect you with our social worker for additional support.",
-            "timestamp": "2025-08-04T13:00:00Z"
-          },
-          {
-            "sender": "Elizabeth_Harper",
-            "text": "I appreciate all the support. This is scary, but I feel like I'm in good hands.",
-            "timestamp": "2025-08-04T13:15:00Z"
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-20T05:37:26.944Z"
           }
-        ]
+        ],
+        "timeStamp": "2025-11-20T11:07:26.944",
+        "seen": true
       },
       {
-        "id": "conv_010",
-        "subject": "Bone Marrow Transplant Follow-up",
-        "participants": ["Marcus_Williams", "Dr_Lisa_Chang"],
-        "messages": [
+        "messageId": "32a4a909-b181-400e-992d-602223bf147f",
+        "messageType": "START_AUTOMATED",
+        "content": "We have successfully received your message. Your care team will contact you shortly.",
+        "senderName": "Automated message",
+        "readBy": [
           {
-            "sender": "Marcus_Williams",
-            "text": "Dr. Chang, it's been 6 months since my transplant. I'm still feeling tired, but overall much better than before.",
-            "timestamp": "2025-08-04T14:00:00Z"
-          },
-          {
-            "sender": "Dr_Lisa_Chang",
-            "text": "That's wonderful to hear, Marcus. Fatigue is very common at this stage. Your latest blood counts look excellent - complete remission.",
-            "timestamp": "2025-08-04T14:15:00Z"
-          },
-          {
-            "sender": "Marcus_Williams",
-            "text": "That's the best news I've heard all year! Does this mean the leukemia is gone for good?",
-            "timestamp": "2025-08-04T14:30:00Z"
-          },
-          {
-            "sender": "Dr_Lisa_Chang",
-            "text": "We're very optimistic, but we'll continue close monitoring. The 6-month mark with these results is very encouraging.",
-            "timestamp": "2025-08-04T14:45:00Z"
-          },
-          {
-            "sender": "Marcus_Williams",
-            "text": "When can I get back to normal activities? I miss playing basketball with my kids.",
-            "timestamp": "2025-08-04T15:00:00Z"
-          },
-          {
-            "sender": "Dr_Lisa_Chang",
-            "text": "Light activities are fine now. Full contact sports should wait until the 1-year mark, but you can definitely start shooting hoops!",
-            "timestamp": "2025-08-04T15:15:00Z"
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-20T05:37:26.978Z"
           }
-        ]
-      },
-      {
-        "id": "conv_011",
-        "subject": "Survivorship Care Planning",
-        "participants": ["Nancy_Peterson", "Dr_Michael_Torres"],
-        "messages": [
-          {
-            "sender": "Nancy_Peterson",
-            "text": "Dr. Torres, it's been 2 years since I completed treatment. I'm nervous about my upcoming scans.",
-            "timestamp": "2025-08-04T16:00:00Z"
-          },
-          {
-            "sender": "Dr_Michael_Torres",
-            "text": "Scanxiety is completely normal, Nancy. You've been doing great with your follow-up appointments. How are you feeling overall?",
-            "timestamp": "2025-08-04T16:15:00Z"
-          },
-          {
-            "sender": "Nancy_Peterson",
-            "text": "Physically I feel good, but every little ache makes me worry. Is that normal?",
-            "timestamp": "2025-08-04T16:30:00Z"
-          },
-          {
-            "sender": "Dr_Michael_Torres",
-            "text": "Very normal. Many survivors experience this. Have you considered joining our survivorship support group?",
-            "timestamp": "2025-08-04T16:45:00Z"
-          }
-        ]
+        ],
+        "timeStamp": "2025-11-20T11:07:26.978",
+        "seen": true
       }
-    ]
+    ],
+    "subject": "Test for readinfo check via local",
+    "purpose": "Medication Refills",
+    "participants": ["lmdc super, MD"],
+    "status": "OPEN",
+    "conversationId": "ee22ba8f-aca7-4bf2-9905-0c5ede8c1724"
+  },
+  {
+    "messageResponse": [
+      {
+        "messageId": "7d5aa969-8e06-4ff8-8f4e-608246e7e956",
+        "messageType": "INCOMING",
+        "content": "SDFSDFSD",
+        "senderName": "rohit yadav",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Provider",
+              "identifier": "23AAC1CAAB52460B8C0F6A22A9126A57",
+              "displayName": "rohit yadav",
+              "firstName": "rohit",
+              "lastName": "yadav"
+            },
+            "readTimestamp": "2025-06-11T06:01:48.389Z"
+          },
+          {
+            "readUser": {
+              "type": "Provider",
+              "identifier": "C2DF2F3A1B7F464B9BCBFC2264BF4346",
+              "displayName": "lmdc super, MD",
+              "firstName": "lmdc",
+              "lastName": "super"
+            },
+            "readTimestamp": "2025-06-20T09:34:50.955Z"
+          },
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-07-07T06:39:41.367Z"
+          },
+          {
+            "readUser": {
+              "type": "Provider",
+              "identifier": "F15FA839D7C642FBB9DA4FB586074CC5",
+              "displayName": "Ontada Test1",
+              "firstName": "Ontada",
+              "lastName": "Test1"
+            },
+            "readTimestamp": "2025-07-25T06:51:48.199Z"
+          }
+        ],
+        "timeStamp": "2025-06-11T11:31:48.389",
+        "seen": true
+      },
+      {
+        "messageId": "b470cd5d-4343-4221-a9d5-e10b4a67a954",
+        "messageType": "INCOMING",
+        "content": "test",
+        "senderName": "lmdc super, MD",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Provider",
+              "identifier": "C2DF2F3A1B7F464B9BCBFC2264BF4346",
+              "displayName": "lmdc super, MD",
+              "firstName": "lmdc",
+              "lastName": "super"
+            },
+            "readTimestamp": "2025-11-19T11:30:04.322Z"
+          }
+        ],
+        "timeStamp": "2025-11-19T17:00:04.323",
+        "seen": false
+      }
+    ],
+    "subject": "SDAF",
+    "purpose": "Patient Form",
+    "participants": ["lmdc super, MD", "rohit yadav"],
+    "status": "OPEN",
+    "conversationId": "36a8c190-1207-47b8-b910-08367359ccc5"
+  },
+  {
+    "messageResponse": [
+      {
+        "messageId": "7a87a95b-6e9d-4b4d-a4fc-9c6790e222ef",
+        "messageType": "OUTGOING",
+        "content": "Message for Medication Refills",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-19T05:37:51.633Z"
+          }
+        ],
+        "timeStamp": "2025-11-19T11:07:51.633",
+        "seen": true,
+        "attachments": [
+          {
+            "createdBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "updatedBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "createdDate": "2025-11-19T05:37:51.633Z",
+            "updatedDate": "2025-11-19T05:37:53.907Z",
+            "name": "mcp.log",
+            "mimeType": "image/jpg",
+            "bytes": 2024,
+            "storagePath": "mcp/mcp.log"
+          }
+        ]
+      },
+      {
+        "messageId": "728ff494-06ed-406a-afbc-5663ac021bbd",
+        "messageType": "START_AUTOMATED",
+        "content": "We have successfully received your message. Your care team will contact you shortly.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-19T05:37:51.656Z"
+          }
+        ],
+        "timeStamp": "2025-11-19T11:07:51.656",
+        "seen": true
+      },
+      {
+        "messageId": "306a3538-2870-40da-a2d8-4ea4578e8301",
+        "messageType": "OUTGOING",
+        "content": "Adding Attachments to Message for testing purpose ",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-19T05:37:51.831Z"
+          }
+        ],
+        "timeStamp": "2025-11-19T11:07:51.831",
+        "seen": true,
+        "attachments": [
+          {
+            "createdBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "updatedBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "createdDate": "2025-11-19T05:37:53.907Z",
+            "updatedDate": "2025-11-19T05:37:53.907Z",
+            "name": "mcp.log",
+            "mimeType": "image/jpg",
+            "bytes": 2024,
+            "storagePath": "mcp/mcp.log"
+          }
+        ]
+      },
+      {
+        "messageId": "1e9a1c52-fe96-4c36-8fa9-a887d33ae216",
+        "messageType": "OUTGOING",
+        "content": "Adding Message to Conversation for testing timestamp",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-19T05:37:52.022Z"
+          },
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-19T05:37:52.206Z"
+          },
+          {
+            "readUser": {
+              "type": "Provider",
+              "identifier": "9D02914C6FAA4E218BB042ABF50F603C",
+              "displayName": "Ontada Health Test",
+              "firstName": "Ontada",
+              "lastName": "Health Test"
+            },
+            "readTimestamp": "2025-11-19T05:37:56.639Z"
+          }
+        ],
+        "timeStamp": "2025-11-19T11:07:52.022",
+        "seen": true
+      },
+      {
+        "messageId": "93d29b1c-e637-4ebf-91e2-c6e7663fae3e",
+        "messageType": "CLOSE_AUTOMATED",
+        "content": "This conversation has been closed. Please start a new conversation if you have additional Requests.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-19T05:37:53.906Z"
+          }
+        ],
+        "timeStamp": "2025-11-19T11:07:53.906",
+        "seen": true
+      }
+    ],
+    "subject": "Message for Medication Understanding",
+    "purpose": "Medication Refills",
+    "participants": ["Paul Watkins, MD"],
+    "status": "CLOSED",
+    "conversationId": "a556b1b8-90c5-4a5e-895d-c52d0b6ab25e"
+  },
+  {
+    "messageResponse": [
+      {
+        "messageId": "3d0bf5ba-febf-43b3-8fcf-d8098ade9a5a",
+        "messageType": "OUTGOING",
+        "content": "Test for readinfo check via local",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-19T05:37:51.171Z"
+          }
+        ],
+        "timeStamp": "2025-11-19T11:07:51.172",
+        "seen": true
+      },
+      {
+        "messageId": "28cb1367-2c1c-49ab-9947-226123485793",
+        "messageType": "START_AUTOMATED",
+        "content": "We have successfully received your message. Your care team will contact you shortly.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-19T05:37:51.217Z"
+          }
+        ],
+        "timeStamp": "2025-11-19T11:07:51.217",
+        "seen": true
+      }
+    ],
+    "subject": "Test for readinfo check via local",
+    "purpose": "Medication Refills",
+    "participants": ["lmdc super, MD"],
+    "status": "OPEN",
+    "conversationId": "468e9186-7f34-49d6-b536-4e95b5ead9bd"
+  },
+  {
+    "messageResponse": [
+      {
+        "messageId": "6837d87f-c7f3-4d51-a038-45a49f76b98d",
+        "messageType": "OUTGOING",
+        "content": "Dr. Chen, I'm experiencing severe nausea after my last chemo session. It's been 3 days and I can barely keep water down.",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-18T11:15:40.048Z"
+          }
+        ],
+        "timeStamp": "2025-11-18T16:45:40.048",
+        "seen": true
+      },
+      {
+        "messageId": "9358874a-f364-47a7-8a98-5aa8d36ba7f2",
+        "messageType": "START_AUTOMATED",
+        "content": "We have successfully received your message. Your care team will contact you shortly.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-18T11:15:40.067Z"
+          }
+        ],
+        "timeStamp": "2025-11-18T16:45:40.067",
+        "seen": true
+      }
+    ],
+    "subject": "Conversation",
+    "purpose": "Lab/Scan Results",
+    "participants": ["demo22 demo22, DO"],
+    "status": "OPEN",
+    "conversationId": "f5b4046e-599c-4682-9461-126a4956b8e6"
+  },
+  {
+    "messageResponse": [
+      {
+        "messageId": "6a9c4863-4a36-4721-9f97-34a5a5cd73dd",
+        "messageType": "OUTGOING",
+        "content": "Message for Medication Refills",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-18T05:36:57.369Z"
+          }
+        ],
+        "timeStamp": "2025-11-18T11:06:57.369",
+        "seen": true,
+        "attachments": [
+          {
+            "createdBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "updatedBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "createdDate": "2025-11-18T05:36:57.369Z",
+            "updatedDate": "2025-11-18T05:37:00.896Z",
+            "name": "mcp.log",
+            "mimeType": "image/jpg",
+            "bytes": 2024,
+            "storagePath": "mcp/mcp.log"
+          }
+        ]
+      },
+      {
+        "messageId": "23492f33-7eb0-45ac-9771-e7313a233146",
+        "messageType": "START_AUTOMATED",
+        "content": "We have successfully received your message. Your care team will contact you shortly.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-18T05:36:57.548Z"
+          }
+        ],
+        "timeStamp": "2025-11-18T11:06:57.548",
+        "seen": true
+      },
+      {
+        "messageId": "2473f9bb-cd19-494e-bada-1401bb05512e",
+        "messageType": "OUTGOING",
+        "content": "Adding Attachments to Message for testing purpose ",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-18T05:36:57.774Z"
+          }
+        ],
+        "timeStamp": "2025-11-18T11:06:57.774",
+        "seen": true,
+        "attachments": [
+          {
+            "createdBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "updatedBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "createdDate": "2025-11-18T05:37:00.896Z",
+            "updatedDate": "2025-11-18T05:37:00.896Z",
+            "name": "mcp.log",
+            "mimeType": "image/jpg",
+            "bytes": 2024,
+            "storagePath": "mcp/mcp.log"
+          }
+        ]
+      },
+      {
+        "messageId": "68ec0301-7b2f-49d9-8c8f-80844d3fed61",
+        "messageType": "OUTGOING",
+        "content": "Adding Message to Conversation for testing timestamp",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-18T05:36:58.186Z"
+          },
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-18T05:36:58.593Z"
+          },
+          {
+            "readUser": {
+              "type": "Provider",
+              "identifier": "9D02914C6FAA4E218BB042ABF50F603C",
+              "displayName": "Ontada Health Test",
+              "firstName": "Ontada",
+              "lastName": "Health Test"
+            },
+            "readTimestamp": "2025-11-18T05:37:04.391Z"
+          }
+        ],
+        "timeStamp": "2025-11-18T11:06:58.186",
+        "seen": true
+      },
+      {
+        "messageId": "a19a76ae-9a11-48c0-b1e7-bc0dfa12ff5e",
+        "messageType": "CLOSE_AUTOMATED",
+        "content": "This conversation has been closed. Please start a new conversation if you have additional Requests.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-18T05:37:00.896Z"
+          }
+        ],
+        "timeStamp": "2025-11-18T11:07:00.896",
+        "seen": true
+      }
+    ],
+    "subject": "Message for Medication Understanding",
+    "purpose": "Medication Refills",
+    "participants": ["Paul Watkins, MD"],
+    "status": "CLOSED",
+    "conversationId": "450b1c62-f56c-4cfb-a5a2-0bdb2a033b07"
+  },
+  {
+    "messageResponse": [
+      {
+        "messageId": "19598556-3690-44df-be5b-5ed16c76609e",
+        "messageType": "OUTGOING",
+        "content": "Test for readinfo check via local",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-18T05:36:56.691Z"
+          }
+        ],
+        "timeStamp": "2025-11-18T11:06:56.691",
+        "seen": true
+      },
+      {
+        "messageId": "247d9679-8586-46e8-8c7e-e47d4aeb8ae7",
+        "messageType": "START_AUTOMATED",
+        "content": "We have successfully received your message. Your care team will contact you shortly.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-18T05:36:56.775Z"
+          }
+        ],
+        "timeStamp": "2025-11-18T11:06:56.775",
+        "seen": true
+      }
+    ],
+    "subject": "Test for readinfo check via local",
+    "purpose": "Medication Refills",
+    "participants": ["lmdc super, MD"],
+    "status": "OPEN",
+    "conversationId": "dc9e0680-878c-4cef-a970-f14ba04d3a31"
+  },
+  {
+    "messageResponse": [
+      {
+        "messageId": "3143347e-d8f2-46fe-97d7-03cac141a1f5",
+        "messageType": "OUTGOING",
+        "content": "Message for Medication Refills",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-17T05:38:03.793Z"
+          }
+        ],
+        "timeStamp": "2025-11-17T11:08:03.794",
+        "seen": true,
+        "attachments": [
+          {
+            "createdBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "updatedBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "createdDate": "2025-11-17T05:38:03.794Z",
+            "updatedDate": "2025-11-17T05:38:06.023Z",
+            "name": "mcp.log",
+            "mimeType": "image/jpg",
+            "bytes": 2024,
+            "storagePath": "mcp/mcp.log"
+          }
+        ]
+      },
+      {
+        "messageId": "d294f0db-ad54-4d27-8c85-db58ff4d9b5b",
+        "messageType": "START_AUTOMATED",
+        "content": "We have successfully received your message. Your care team will contact you shortly.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-17T05:38:03.81Z"
+          }
+        ],
+        "timeStamp": "2025-11-17T11:08:03.810",
+        "seen": true
+      },
+      {
+        "messageId": "fc32c169-a151-43b9-b860-514950457833",
+        "messageType": "OUTGOING",
+        "content": "Adding Attachments to Message for testing purpose ",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-17T05:38:04Z"
+          }
+        ],
+        "timeStamp": "2025-11-17T11:08:04.001",
+        "seen": true,
+        "attachments": [
+          {
+            "createdBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "updatedBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "createdDate": "2025-11-17T05:38:06.023Z",
+            "updatedDate": "2025-11-17T05:38:06.023Z",
+            "name": "mcp.log",
+            "mimeType": "image/jpg",
+            "bytes": 2024,
+            "storagePath": "mcp/mcp.log"
+          }
+        ]
+      },
+      {
+        "messageId": "1c4bfaee-75c9-468d-816a-3a4df757a182",
+        "messageType": "OUTGOING",
+        "content": "Adding Message to Conversation for testing timestamp",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-17T05:38:04.181Z"
+          },
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-17T05:38:04.33Z"
+          },
+          {
+            "readUser": {
+              "type": "Provider",
+              "identifier": "9D02914C6FAA4E218BB042ABF50F603C",
+              "displayName": "Ontada Health Test",
+              "firstName": "Ontada",
+              "lastName": "Health Test"
+            },
+            "readTimestamp": "2025-11-17T05:38:09.232Z"
+          }
+        ],
+        "timeStamp": "2025-11-17T11:08:04.181",
+        "seen": true
+      },
+      {
+        "messageId": "5e745c9e-290d-4008-bafe-020d56a7ecef",
+        "messageType": "CLOSE_AUTOMATED",
+        "content": "This conversation has been closed. Please start a new conversation if you have additional Requests.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-17T05:38:06.023Z"
+          }
+        ],
+        "timeStamp": "2025-11-17T11:08:06.023",
+        "seen": true
+      }
+    ],
+    "subject": "Message for Medication Understanding",
+    "purpose": "Medication Refills",
+    "participants": ["Paul Watkins, MD"],
+    "status": "CLOSED",
+    "conversationId": "f27466d6-dd5e-4176-8fa7-7a22fd5565a0"
+  },
+  {
+    "messageResponse": [
+      {
+        "messageId": "b74479c1-1f67-4d8b-b477-3445733bcb2d",
+        "messageType": "OUTGOING",
+        "content": "Test for readinfo check via local",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-17T05:38:03.179Z"
+          }
+        ],
+        "timeStamp": "2025-11-17T11:08:03.179",
+        "seen": true
+      },
+      {
+        "messageId": "89c5763c-4d5b-4f51-8a24-0aec8390fa53",
+        "messageType": "START_AUTOMATED",
+        "content": "We have successfully received your message. Your care team will contact you shortly.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-17T05:38:03.197Z"
+          }
+        ],
+        "timeStamp": "2025-11-17T11:08:03.197",
+        "seen": true
+      }
+    ],
+    "subject": "Test for readinfo check via local",
+    "purpose": "Medication Refills",
+    "participants": ["lmdc super, MD"],
+    "status": "OPEN",
+    "conversationId": "808c4f42-1749-408b-933a-61ad05036cc9"
+  },
+  {
+    "messageResponse": [
+      {
+        "messageId": "414b4e72-8921-43ba-9b19-768764a0faa6",
+        "messageType": "OUTGOING",
+        "content": "Message for Medication Refills",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-16T05:36:40.674Z"
+          }
+        ],
+        "timeStamp": "2025-11-16T11:06:40.674",
+        "seen": true,
+        "attachments": [
+          {
+            "createdBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "updatedBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "createdDate": "2025-11-16T05:36:40.674Z",
+            "updatedDate": "2025-11-16T05:36:43.911Z",
+            "name": "mcp.log",
+            "mimeType": "image/jpg",
+            "bytes": 2024,
+            "storagePath": "mcp/mcp.log"
+          }
+        ]
+      },
+      {
+        "messageId": "a1236bf1-ebf4-4041-976e-471e7d74e022",
+        "messageType": "START_AUTOMATED",
+        "content": "We have successfully received your message. Your care team will contact you shortly.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-16T05:36:40.774Z"
+          }
+        ],
+        "timeStamp": "2025-11-16T11:06:40.774",
+        "seen": true
+      },
+      {
+        "messageId": "4f6349f3-88bc-41ad-ae57-ba2feb89123e",
+        "messageType": "OUTGOING",
+        "content": "Adding Attachments to Message for testing purpose ",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-16T05:36:41.034Z"
+          }
+        ],
+        "timeStamp": "2025-11-16T11:06:41.035",
+        "seen": true,
+        "attachments": [
+          {
+            "createdBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "updatedBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "createdDate": "2025-11-16T05:36:43.911Z",
+            "updatedDate": "2025-11-16T05:36:43.911Z",
+            "name": "mcp.log",
+            "mimeType": "image/jpg",
+            "bytes": 2024,
+            "storagePath": "mcp/mcp.log"
+          }
+        ]
+      },
+      {
+        "messageId": "e7df40c0-4282-459c-afc4-f3b9f999a087",
+        "messageType": "OUTGOING",
+        "content": "Adding Message to Conversation for testing timestamp",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-16T05:36:41.251Z"
+          },
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-16T05:36:41.519Z"
+          },
+          {
+            "readUser": {
+              "type": "Provider",
+              "identifier": "9D02914C6FAA4E218BB042ABF50F603C",
+              "displayName": "Ontada Health Test",
+              "firstName": "Ontada",
+              "lastName": "Health Test"
+            },
+            "readTimestamp": "2025-11-16T05:36:47.825Z"
+          }
+        ],
+        "timeStamp": "2025-11-16T11:06:41.251",
+        "seen": true
+      },
+      {
+        "messageId": "ab69a5f8-52b9-4717-a484-4858930213b4",
+        "messageType": "CLOSE_AUTOMATED",
+        "content": "This conversation has been closed. Please start a new conversation if you have additional Requests.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-16T05:36:43.911Z"
+          }
+        ],
+        "timeStamp": "2025-11-16T11:06:43.911",
+        "seen": true
+      }
+    ],
+    "subject": "Message for Medication Understanding",
+    "purpose": "Medication Refills",
+    "participants": ["Paul Watkins, MD"],
+    "status": "CLOSED",
+    "conversationId": "991ac733-8ec1-4367-9968-98722f73b4b5"
+  },
+  {
+    "messageResponse": [
+      {
+        "messageId": "e93c9c91-cd27-4000-8938-7587c1bd81f0",
+        "messageType": "OUTGOING",
+        "content": "Test for readinfo check via local",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-16T05:36:40.073Z"
+          }
+        ],
+        "timeStamp": "2025-11-16T11:06:40.073",
+        "seen": true
+      },
+      {
+        "messageId": "a4a9a82f-bd63-405e-a1d4-c413615c14a5",
+        "messageType": "START_AUTOMATED",
+        "content": "We have successfully received your message. Your care team will contact you shortly.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-16T05:36:40.132Z"
+          }
+        ],
+        "timeStamp": "2025-11-16T11:06:40.132",
+        "seen": true
+      }
+    ],
+    "subject": "Test for readinfo check via local",
+    "purpose": "Medication Refills",
+    "participants": ["lmdc super, MD"],
+    "status": "OPEN",
+    "conversationId": "d1cd3a60-cb27-4a54-bc0f-9861f1b24e6a"
+  },
+  {
+    "messageResponse": [
+      {
+        "messageId": "03b50b96-294b-485c-afcd-12356a327daf",
+        "messageType": "OUTGOING",
+        "content": "Message for Medication Refills",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-15T05:36:23.502Z"
+          }
+        ],
+        "timeStamp": "2025-11-15T11:06:23.502",
+        "seen": true,
+        "attachments": [
+          {
+            "createdBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "updatedBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "createdDate": "2025-11-15T05:36:23.502Z",
+            "updatedDate": "2025-11-15T05:36:26.318Z",
+            "name": "mcp.log",
+            "mimeType": "image/jpg",
+            "bytes": 2024,
+            "storagePath": "mcp/mcp.log"
+          }
+        ]
+      },
+      {
+        "messageId": "54d1f41b-24e3-48f2-9f10-934f7affa844",
+        "messageType": "START_AUTOMATED",
+        "content": "We have successfully received your message. Your care team will contact you shortly.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-15T05:36:23.534Z"
+          }
+        ],
+        "timeStamp": "2025-11-15T11:06:23.534",
+        "seen": true
+      },
+      {
+        "messageId": "5c134f7c-5281-4856-85bf-c5a7efc4e2eb",
+        "messageType": "OUTGOING",
+        "content": "Adding Attachments to Message for testing purpose ",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-15T05:36:23.827Z"
+          }
+        ],
+        "timeStamp": "2025-11-15T11:06:23.830",
+        "seen": true,
+        "attachments": [
+          {
+            "createdBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "updatedBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "createdDate": "2025-11-15T05:36:26.318Z",
+            "updatedDate": "2025-11-15T05:36:26.318Z",
+            "name": "mcp.log",
+            "mimeType": "image/jpg",
+            "bytes": 2024,
+            "storagePath": "mcp/mcp.log"
+          }
+        ]
+      },
+      {
+        "messageId": "3895a37e-310a-4447-9f78-d108f74caa1e",
+        "messageType": "OUTGOING",
+        "content": "Adding Message to Conversation for testing timestamp",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-15T05:36:24.127Z"
+          },
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-15T05:36:24.319Z"
+          },
+          {
+            "readUser": {
+              "type": "Provider",
+              "identifier": "9D02914C6FAA4E218BB042ABF50F603C",
+              "displayName": "Ontada Health Test",
+              "firstName": "Ontada",
+              "lastName": "Health Test"
+            },
+            "readTimestamp": "2025-11-15T05:36:29.396Z"
+          }
+        ],
+        "timeStamp": "2025-11-15T11:06:24.128",
+        "seen": true
+      },
+      {
+        "messageId": "a81add0d-2a25-4b5b-bdd0-192d25bc712e",
+        "messageType": "CLOSE_AUTOMATED",
+        "content": "This conversation has been closed. Please start a new conversation if you have additional Requests.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-15T05:36:26.317Z"
+          }
+        ],
+        "timeStamp": "2025-11-15T11:06:26.317",
+        "seen": true
+      }
+    ],
+    "subject": "Message for Medication Understanding",
+    "purpose": "Medication Refills",
+    "participants": ["Paul Watkins, MD"],
+    "status": "CLOSED",
+    "conversationId": "4c4b0e11-7ca5-4851-81d9-8a477f6eb57f"
+  },
+  {
+    "messageResponse": [
+      {
+        "messageId": "a5cb41f6-9cc4-4ab0-b907-3d77d0a9762a",
+        "messageType": "OUTGOING",
+        "content": "Test for readinfo check via local",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-15T05:36:22.667Z"
+          }
+        ],
+        "timeStamp": "2025-11-15T11:06:22.693",
+        "seen": true
+      },
+      {
+        "messageId": "33477a72-20ac-46d2-b5f3-7737978b4a18",
+        "messageType": "START_AUTOMATED",
+        "content": "We have successfully received your message. Your care team will contact you shortly.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-15T05:36:22.811Z"
+          }
+        ],
+        "timeStamp": "2025-11-15T11:06:22.811",
+        "seen": true
+      }
+    ],
+    "subject": "Test for readinfo check via local",
+    "purpose": "Medication Refills",
+    "participants": ["lmdc super, MD"],
+    "status": "OPEN",
+    "conversationId": "ef83161b-8413-4c83-aafd-24ac22e57926"
+  },
+  {
+    "messageResponse": [
+      {
+        "messageId": "1c2aa2a8-bf8a-4c6a-bd8c-991e55e5c2f7",
+        "messageType": "OUTGOING",
+        "content": "Message for Medication Refills",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-14T05:37:00.925Z"
+          }
+        ],
+        "timeStamp": "2025-11-14T11:07:00.925",
+        "seen": true,
+        "attachments": [
+          {
+            "createdBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "updatedBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "createdDate": "2025-11-14T05:37:00.925Z",
+            "updatedDate": "2025-11-14T05:37:04.33Z",
+            "name": "mcp.log",
+            "mimeType": "image/jpg",
+            "bytes": 2024,
+            "storagePath": "mcp/mcp.log"
+          }
+        ]
+      },
+      {
+        "messageId": "ed105056-fe8f-41d8-a6d0-eb33580d6947",
+        "messageType": "START_AUTOMATED",
+        "content": "We have successfully received your message. Your care team will contact you shortly.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-14T05:37:00.939Z"
+          }
+        ],
+        "timeStamp": "2025-11-14T11:07:00.939",
+        "seen": true
+      },
+      {
+        "messageId": "c051c7f3-ae57-49f8-b8cf-04dbc3737169",
+        "messageType": "OUTGOING",
+        "content": "Adding Attachments to Message for testing purpose ",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-14T05:37:01.096Z"
+          }
+        ],
+        "timeStamp": "2025-11-14T11:07:01.096",
+        "seen": true,
+        "attachments": [
+          {
+            "createdBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "updatedBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "createdDate": "2025-11-14T05:37:04.33Z",
+            "updatedDate": "2025-11-14T05:37:04.33Z",
+            "name": "mcp.log",
+            "mimeType": "image/jpg",
+            "bytes": 2024,
+            "storagePath": "mcp/mcp.log"
+          }
+        ]
+      },
+      {
+        "messageId": "28b8b486-3733-459c-8d59-d4d1f27ec4b8",
+        "messageType": "OUTGOING",
+        "content": "Adding Message to Conversation for testing timestamp",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-14T05:37:01.321Z"
+          },
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-14T05:37:01.49Z"
+          },
+          {
+            "readUser": {
+              "type": "Provider",
+              "identifier": "9D02914C6FAA4E218BB042ABF50F603C",
+              "displayName": "Ontada Health Test",
+              "firstName": "Ontada",
+              "lastName": "Health Test"
+            },
+            "readTimestamp": "2025-11-14T05:37:07.724Z"
+          }
+        ],
+        "timeStamp": "2025-11-14T11:07:01.322",
+        "seen": true
+      },
+      {
+        "messageId": "67f81c72-b5aa-45b3-9a76-db51a7344ec8",
+        "messageType": "CLOSE_AUTOMATED",
+        "content": "This conversation has been closed. Please start a new conversation if you have additional Requests.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-14T05:37:04.33Z"
+          }
+        ],
+        "timeStamp": "2025-11-14T11:07:04.330",
+        "seen": true
+      }
+    ],
+    "subject": "Message for Medication Understanding",
+    "purpose": "Medication Refills",
+    "participants": ["Paul Watkins, MD"],
+    "status": "CLOSED",
+    "conversationId": "51d84fc5-f562-4c95-ab3b-f1c78118c8e0"
+  },
+  {
+    "messageResponse": [
+      {
+        "messageId": "ca5255c1-1133-4758-ba9f-7f6cfe2a5bae",
+        "messageType": "OUTGOING",
+        "content": "Test for readinfo check via local",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-14T05:37:00.429Z"
+          }
+        ],
+        "timeStamp": "2025-11-14T11:07:00.431",
+        "seen": true
+      },
+      {
+        "messageId": "71e133cd-310f-4a3d-9810-eeaccdd403d3",
+        "messageType": "START_AUTOMATED",
+        "content": "We have successfully received your message. Your care team will contact you shortly.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-14T05:37:00.448Z"
+          }
+        ],
+        "timeStamp": "2025-11-14T11:07:00.448",
+        "seen": true
+      }
+    ],
+    "subject": "Test for readinfo check via local",
+    "purpose": "Medication Refills",
+    "participants": ["lmdc super, MD"],
+    "status": "OPEN",
+    "conversationId": "1d574782-dab7-4a94-ac45-8426bfbfbd92"
+  },
+  {
+    "messageResponse": [
+      {
+        "messageId": "45819a12-d00c-4706-8459-711da2ec8ee8",
+        "messageType": "OUTGOING",
+        "content": "Message for Medication Refills",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-13T05:37:41.86Z"
+          },
+          {
+            "readUser": {
+              "type": "Provider",
+              "identifier": "C2DF2F3A1B7F464B9BCBFC2264BF4346",
+              "displayName": "lmdc super, MD",
+              "firstName": "lmdc",
+              "lastName": "super"
+            },
+            "readTimestamp": "2025-11-13T15:58:46.134Z"
+          }
+        ],
+        "timeStamp": "2025-11-13T11:07:41.861",
+        "seen": true,
+        "attachments": [
+          {
+            "createdBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "updatedBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "createdDate": "2025-11-13T05:37:41.861Z",
+            "updatedDate": "2025-11-13T05:37:44.549Z",
+            "name": "mcp.log",
+            "mimeType": "image/jpg",
+            "bytes": 2024,
+            "storagePath": "mcp/mcp.log"
+          }
+        ]
+      },
+      {
+        "messageId": "93d3bba6-85dc-4dde-a631-4721342b765c",
+        "messageType": "START_AUTOMATED",
+        "content": "We have successfully received your message. Your care team will contact you shortly.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-13T05:37:41.875Z"
+          },
+          {
+            "readUser": {
+              "type": "Provider",
+              "identifier": "C2DF2F3A1B7F464B9BCBFC2264BF4346",
+              "displayName": "lmdc super, MD",
+              "firstName": "lmdc",
+              "lastName": "super"
+            },
+            "readTimestamp": "2025-11-13T15:58:45.99Z"
+          }
+        ],
+        "timeStamp": "2025-11-13T11:07:41.875",
+        "seen": true
+      },
+      {
+        "messageId": "5c7d5a13-34e9-45c2-bb09-7abc08973fae",
+        "messageType": "OUTGOING",
+        "content": "Adding Attachments to Message for testing purpose ",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-13T05:37:42.047Z"
+          },
+          {
+            "readUser": {
+              "type": "Provider",
+              "identifier": "C2DF2F3A1B7F464B9BCBFC2264BF4346",
+              "displayName": "lmdc super, MD",
+              "firstName": "lmdc",
+              "lastName": "super"
+            },
+            "readTimestamp": "2025-11-13T15:58:45.994Z"
+          }
+        ],
+        "timeStamp": "2025-11-13T11:07:42.047",
+        "seen": true,
+        "attachments": [
+          {
+            "createdBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "updatedBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "createdDate": "2025-11-13T05:37:44.549Z",
+            "updatedDate": "2025-11-13T05:37:44.549Z",
+            "name": "mcp.log",
+            "mimeType": "image/jpg",
+            "bytes": 2024,
+            "storagePath": "mcp/mcp.log"
+          }
+        ]
+      },
+      {
+        "messageId": "3a83ac0c-34e3-428c-a581-679a06ae36ca",
+        "messageType": "OUTGOING",
+        "content": "Adding Message to Conversation for testing timestamp",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-13T05:37:42.344Z"
+          },
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-13T05:37:42.501Z"
+          },
+          {
+            "readUser": {
+              "type": "Provider",
+              "identifier": "9D02914C6FAA4E218BB042ABF50F603C",
+              "displayName": "Ontada Health Test",
+              "firstName": "Ontada",
+              "lastName": "Health Test"
+            },
+            "readTimestamp": "2025-11-13T05:37:47.893Z"
+          },
+          {
+            "readUser": {
+              "type": "Provider",
+              "identifier": "C2DF2F3A1B7F464B9BCBFC2264BF4346",
+              "displayName": "lmdc super, MD",
+              "firstName": "lmdc",
+              "lastName": "super"
+            },
+            "readTimestamp": "2025-11-13T15:58:45.999Z"
+          }
+        ],
+        "timeStamp": "2025-11-13T11:07:42.345",
+        "seen": true
+      },
+      {
+        "messageId": "9f63953c-a9aa-4e74-bd12-abf3e8bf2071",
+        "messageType": "CLOSE_AUTOMATED",
+        "content": "This conversation has been closed. Please start a new conversation if you have additional Requests.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-13T05:37:44.548Z"
+          },
+          {
+            "readUser": {
+              "type": "Provider",
+              "identifier": "C2DF2F3A1B7F464B9BCBFC2264BF4346",
+              "displayName": "lmdc super, MD",
+              "firstName": "lmdc",
+              "lastName": "super"
+            },
+            "readTimestamp": "2025-11-13T15:58:45.976Z"
+          }
+        ],
+        "timeStamp": "2025-11-13T11:07:44.548",
+        "seen": true
+      }
+    ],
+    "subject": "Message for Medication Understanding",
+    "purpose": "Medication Refills",
+    "participants": ["Paul Watkins, MD"],
+    "status": "CLOSED",
+    "conversationId": "cb958071-5008-417a-9901-9e3896a2e48e"
+  },
+  {
+    "messageResponse": [
+      {
+        "messageId": "f5080b14-043d-491d-8ffe-4199322dac67",
+        "messageType": "OUTGOING",
+        "content": "Test for readinfo check via local",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-13T05:37:41.329Z"
+          }
+        ],
+        "timeStamp": "2025-11-13T11:07:41.329",
+        "seen": true
+      },
+      {
+        "messageId": "562fddfd-eb95-4020-8665-6cc23a302f8c",
+        "messageType": "START_AUTOMATED",
+        "content": "We have successfully received your message. Your care team will contact you shortly.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-13T05:37:41.354Z"
+          }
+        ],
+        "timeStamp": "2025-11-13T11:07:41.354",
+        "seen": true
+      }
+    ],
+    "subject": "Test for readinfo check via local",
+    "purpose": "Medication Refills",
+    "participants": ["lmdc super, MD"],
+    "status": "OPEN",
+    "conversationId": "92c9291f-64a3-4e72-92ab-a8ed1cec8bbd"
+  },
+  {
+    "messageResponse": [
+      {
+        "messageId": "a39ffb9f-b66e-4441-9fd0-fc166305c88a",
+        "messageType": "OUTGOING",
+        "content": "Message for Medication Refills",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-12T05:37:27.133Z"
+          }
+        ],
+        "timeStamp": "2025-11-12T11:07:27.134",
+        "seen": true,
+        "attachments": [
+          {
+            "createdBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "updatedBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "createdDate": "2025-11-12T05:37:27.134Z",
+            "updatedDate": "2025-11-12T05:37:29.405Z",
+            "name": "mcp.log",
+            "mimeType": "image/jpg",
+            "bytes": 2024,
+            "storagePath": "mcp/mcp.log"
+          }
+        ]
+      },
+      {
+        "messageId": "6da4c47f-5751-4d71-8ff0-9d776dc8da7b",
+        "messageType": "START_AUTOMATED",
+        "content": "We have successfully received your message. Your care team will contact you shortly.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-12T05:37:27.158Z"
+          }
+        ],
+        "timeStamp": "2025-11-12T11:07:27.158",
+        "seen": true
+      },
+      {
+        "messageId": "ab7c082e-4ba6-426a-ab1a-a9c3ec177c0f",
+        "messageType": "OUTGOING",
+        "content": "Adding Attachments to Message for testing purpose ",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-12T05:37:27.313Z"
+          }
+        ],
+        "timeStamp": "2025-11-12T11:07:27.313",
+        "seen": true,
+        "attachments": [
+          {
+            "createdBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "updatedBy": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "createdDate": "2025-11-12T05:37:29.405Z",
+            "updatedDate": "2025-11-12T05:37:29.405Z",
+            "name": "mcp.log",
+            "mimeType": "image/jpg",
+            "bytes": 2024,
+            "storagePath": "mcp/mcp.log"
+          }
+        ]
+      },
+      {
+        "messageId": "77f7337d-c73c-4c9e-bfc0-5855df567571",
+        "messageType": "OUTGOING",
+        "content": "Adding Message to Conversation for testing timestamp",
+        "senderName": "Ajayyyy",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-12T05:37:27.475Z"
+          },
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-12T05:37:27.621Z"
+          },
+          {
+            "readUser": {
+              "type": "Provider",
+              "identifier": "9D02914C6FAA4E218BB042ABF50F603C",
+              "displayName": "Ontada Health Test",
+              "firstName": "Ontada",
+              "lastName": "Health Test"
+            },
+            "readTimestamp": "2025-11-12T05:37:33.209Z"
+          }
+        ],
+        "timeStamp": "2025-11-12T11:07:27.475",
+        "seen": true
+      },
+      {
+        "messageId": "e3bf6b01-7b7b-4f41-bec5-52862f7a5bc6",
+        "messageType": "CLOSE_AUTOMATED",
+        "content": "This conversation has been closed. Please start a new conversation if you have additional Requests.",
+        "senderName": "Automated message",
+        "readBy": [
+          {
+            "readUser": {
+              "type": "Patient",
+              "identifier": "F8C4AF9A56204EB681AF1F7BF9D386CF",
+              "displayName": "watson_james@yopmail.com",
+              "firstName": "Ajayyyy",
+              "lastName": "kase Brewerr",
+              "patientPortalId": "13040a60-e403-45ae-8a99-5b6cb0c40daa"
+            },
+            "readTimestamp": "2025-11-12T05:37:29.405Z"
+          }
+        ],
+        "timeStamp": "2025-11-12T11:07:29.405",
+        "seen": true
+      }
+    ],
+    "subject": "Message for Medication Understanding",
+    "purpose": "Medication Refills",
+    "participants": ["Paul Watkins, MD"],
+    "status": "CLOSED",
+    "conversationId": "6c9f8983-eeb4-4516-bfa2-783811c8e5b5"
   }
 ]
