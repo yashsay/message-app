@@ -13,8 +13,12 @@ from pydantic import BaseModel, Field
 from typing import List, Optional, Dict, Any
 from collections import Counter
 import logging
+import json
+import os
+import subprocess
+import sys
 
-from app.utils import load_flattened_messages
+from app.utils import load_flattened_messages, load_mock_messages, save_mock_messages
 from app.semantic_search import semantic_engine
 
 # Configure logging
@@ -53,6 +57,56 @@ class SummarizeRequest(BaseModel):
     )
 
 
+class User(BaseModel):
+    """User information model."""
+    type: str
+    identifier: str
+    displayName: str
+    firstName: str
+    lastName: str
+    patientPortalId: Optional[str] = None
+
+
+class ReadBy(BaseModel):
+    """Read status model."""
+    readUser: User
+    readTimestamp: str
+
+
+class Attachment(BaseModel):
+    """Message attachment model."""
+    createdBy: User
+    updatedBy: User
+    createdDate: str
+    updatedDate: str
+    name: str
+    mimeType: str
+    bytes: int
+    storagePath: str
+
+
+class Message(BaseModel):
+    """Individual message model."""
+    messageId: str
+    messageType: str
+    content: str
+    senderName: str
+    readBy: List[ReadBy]
+    timeStamp: str
+    seen: bool
+    attachments: Optional[List[Attachment]] = None
+
+
+class Conversation(BaseModel):
+    """Conversation model containing messages and metadata."""
+    conversationId: str
+    subject: str
+    purpose: str
+    participants: List[str]
+    status: str
+    messageResponse: List[Message]
+
+
 class MessageResponse(BaseModel):
     """Standard response model for message operations."""
     messages: List[Dict[str, Any]]
@@ -69,6 +123,16 @@ class SummaryResponse(BaseModel):
     conversationId: str
     summary: str
     highlights: Optional[List[str]] = None
+
+
+class BulkUpdateResponse(BaseModel):
+    """Response model for bulk conversation updates."""
+    success: bool
+    message: str
+    conversationsProcessed: int
+    conversationsAdded: int
+    conversationsUpdated: int
+    messagesAdded: int
 
 
 # ==================== API ENDPOINTS ====================
@@ -266,3 +330,130 @@ async def summarize_conversation(payload: SummarizeRequest) -> Dict[str, Any]:
     except Exception as e:
         logger.error(f"Error summarizing conversation {payload.conversationId}: {str(e)}")
         raise HTTPException(status_code=500, detail="Conversation summarization failed")
+
+
+@router.post("/bulk-update", response_model=BulkUpdateResponse)
+async def bulk_update_conversations(conversations: List[Conversation]) -> Dict[str, Any]:
+    """
+    Bulk update conversations by adding new conversations or merging messages into existing ones.
+
+    This endpoint:
+    1. Loads existing conversations from mockMessages.json
+    2. For each conversation in the request:
+       - If conversationId doesn't exist, adds the full conversation
+       - If conversationId exists, merges new messages (avoiding duplicates)
+    3. Saves the updated mockMessages.json
+    4. Calls flattenMessages() to regenerate flattenedMessages.json
+    5. Calls buildIndex() to rebuild the FAISS search index
+
+    Args:
+        conversations: List of Conversation objects to add or update
+
+    Returns:
+        Dictionary containing operation statistics and success status
+
+    Raises:
+        HTTPException: If the operation fails
+    """
+    try:
+        logger.info(f"Starting bulk update with {len(conversations)} conversations")
+
+        # Load existing conversations from mockMessages.json
+        existing_conversations = load_mock_messages()
+        logger.info(f"Loaded {len(existing_conversations)} existing conversations")
+
+        # Track statistics
+        conversations_added = 0
+        conversations_updated = 0
+        messages_added = 0
+
+        # Process each conversation in the request
+        for new_conversation in conversations:
+            # Find if conversation already exists
+            existing_index = None
+            for idx, conv in enumerate(existing_conversations):
+                if conv.get("conversationId") == new_conversation.conversationId:
+                    existing_index = idx
+                    break
+
+            if existing_index is None:
+                # Conversation doesn't exist - add it completely
+                existing_conversations.append(new_conversation.dict())
+                conversations_added += 1
+                messages_added += len(new_conversation.messageResponse)
+                logger.info(f"Added new conversation: {new_conversation.conversationId}")
+            else:
+                # Conversation exists - merge messages
+                existing_conv = existing_conversations[existing_index]
+                existing_message_ids = {
+                    msg.get("messageId")
+                    for msg in existing_conv.get("messageResponse", [])
+                }
+
+                # Add only new messages (not already present)
+                new_messages_count = 0
+                for new_message in new_conversation.messageResponse:
+                    if new_message.messageId not in existing_message_ids:
+                        existing_conv["messageResponse"].append(new_message.dict())
+                        new_messages_count += 1
+                        messages_added += 1
+
+                if new_messages_count > 0:
+                    conversations_updated += 1
+                    logger.info(
+                        f"Updated conversation {new_conversation.conversationId}: "
+                        f"added {new_messages_count} new messages"
+                    )
+
+                # Update conversation metadata
+                existing_conv["subject"] = new_conversation.subject
+                existing_conv["purpose"] = new_conversation.purpose
+                existing_conv["participants"] = new_conversation.participants
+                existing_conv["status"] = new_conversation.status
+
+        # Save updated conversations to mockMessages.json
+        save_mock_messages(existing_conversations)
+        logger.info("Successfully saved updated mockMessages.json")
+
+        # Call flattenMessages script
+        logger.info("Running flattenMessages.py...")
+        flatten_script_path = os.path.join(
+            os.path.dirname(__file__),
+            "../../shared/scripts/flattenMessages.py"
+        )
+        subprocess.run(
+            [sys.executable, flatten_script_path],
+            check=True,
+            capture_output=True,
+            text=True
+        )
+        logger.info("Successfully flattened messages")
+
+        # Call buildIndex
+        logger.info("Rebuilding FAISS index...")
+        from app.semantic_search import build_and_save_index
+        build_and_save_index()
+        logger.info("Successfully rebuilt FAISS index")
+
+        return {
+            "success": True,
+            "message": "Conversations updated successfully",
+            "conversationsProcessed": len(conversations),
+            "conversationsAdded": conversations_added,
+            "conversationsUpdated": conversations_updated,
+            "messagesAdded": messages_added
+        }
+
+    except subprocess.CalledProcessError as e:
+        logger.error(f"Error running post-processing scripts: {str(e)}")
+        logger.error(f"Script output: {e.stderr}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to run post-processing: {str(e)}"
+        )
+    except Exception as e:
+        logger.error(f"Error in bulk update: {str(e)}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Bulk update operation failed: {str(e)}"
+        )
